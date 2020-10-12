@@ -52,31 +52,31 @@ final class ResearchSetup {
       .addItems(Items.ELECTRIC_WIND_STAFF)
       .register();
     new Research(new NamespacedKey(FoxyMachines.getInstance(), "electric_fire_staffs"),
-      6669667, "Create inferno", 34)
+      6669667, "製造火海", 34)
       .addItems(Items.ELECTRIC_FIRE_STAFF, Items.ELECTRIC_FIRE_STAFF_II)
       .register();
     new Research(new NamespacedKey(FoxyMachines.getInstance(), "healing_bow"),
-      6669668, "Support", 30)
+      6669668, "支援", 30)
       .addItems(Items.HEALING_BOW)
       .register();
     new Research(new NamespacedKey(FoxyMachines.getInstance(), "reinforced_string"),
-      6669669, "Harder, Better, Stronger", 18)
+      6669669, "更堅硬, 更好, 更強", 18)
       .addItems(Items.REINFORCED_STRING)
       .register();
     new Research(new NamespacedKey(FoxyMachines.getInstance(), "improvement_forge"),
-      6669670, "Beyond imaginations", 48)
+      6669670, "超越想像", 48)
       .addItems(Items.IMPROVEMENT_FORGE)
       .register();
     new Research(new NamespacedKey(FoxyMachines.getInstance(), "improvement_core"),
-      6669671, "Up 1", 28)
+      6669671, "向上1", 28)
       .addItems(Items.IMPROVEMENT_CORE)
       .register();
     new Research(new NamespacedKey(FoxyMachines.getInstance(), "potion_mixer"),
-      6669672, "Brewing like never before", 28)
+      6669672, "前所未有的釀造", 28)
       .addItems(Items.POTION_MIXER)
       .register();
     new Research(new NamespacedKey(FoxyMachines.getInstance(), "electric_gold_refinery"),
-      6669673, "Get rid of the smelteries", 28)
+      6669673, "擺脫治煉爐", 28)
       .addItems(Items.ELECTRIC_GOLD_REFINERY)
       .register();
   }

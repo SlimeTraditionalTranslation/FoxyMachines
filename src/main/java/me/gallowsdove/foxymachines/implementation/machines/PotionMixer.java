@@ -66,7 +66,7 @@ public class PotionMixer extends SlimefunItem implements InventoryBlock, EnergyN
     });
 
 
-    new BlockMenuPreset(getID(), "&6Potion Mixer") {
+    new BlockMenuPreset(getID(), "&6藥水混合器") {
 
       @Override
       public void init() {
@@ -423,19 +423,19 @@ public class PotionMixer extends SlimefunItem implements InventoryBlock, EnergyN
           potionMeta.addCustomEffect(effect, false);
         }
 
-        List<String> lore = new ArrayList<String>() {{add("Not useable in Brewing Stand");}};
+        List<String> lore = new ArrayList<String>() {{add("無法在釀造台上使用");}};
         potionMeta.setBasePotionData​(new PotionData(PotionType.UNCRAFTABLE, false, false));
         switch(potion1.getType()){
           case POTION:
-            potionMeta.setDisplayName(ChatColor.AQUA + "Combined Potion");
+            potionMeta.setDisplayName(ChatColor.AQUA + "混和藥水");
             break;
           case LINGERING_POTION:
-            lore.add(ChatColor.RED + "The time shown is incorrect due to a Minecraft");
-            lore.add(ChatColor.RED + "bug, multiply it by 4 to get the real time.");
-            potionMeta.setDisplayName(ChatColor.AQUA + "Combined Lingering Potion");
+            lore.add(ChatColor.RED + "由於Minecraft顯示的時間不正確");
+            lore.add(ChatColor.RED + "錯誤,將其乘以4得到真實時間.");
+            potionMeta.setDisplayName(ChatColor.AQUA + "混和滯留藥水");
             break;
           case SPLASH_POTION:
-            potionMeta.setDisplayName(ChatColor.AQUA + "Combined Splash Potion");
+            potionMeta.setDisplayName(ChatColor.AQUA + "混和飛濺藥水");
             break;
         }
         potionMeta.setLore(lore);

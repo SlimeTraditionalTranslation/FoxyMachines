@@ -67,7 +67,7 @@ public class ImprovementForge extends SlimefunItem implements InventoryBlock, En
     });
 
 
-    new BlockMenuPreset(getID(), "&6Improvement Forge") {
+    new BlockMenuPreset(getID(), "&6改進鍛造機") {
 
       @Override
       public void init() {

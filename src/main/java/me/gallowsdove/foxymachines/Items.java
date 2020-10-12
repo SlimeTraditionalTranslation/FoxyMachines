@@ -20,23 +20,23 @@ public final class Items{
 
   public static Category tools = new Category(
     new NamespacedKey(FoxyMachines.getInstance(), "foxy_tools"),
-    new CustomItem(Material.SHEARS, "&4Foxy Tools", "", "&a> Click to open"));
+    new CustomItem(Material.SHEARS, "&4Foxy工具", "", "&a> 點擊開啟"));
   public static Category weapons = new Category(
     new NamespacedKey(FoxyMachines.getInstance(), "foxy_weapons"),
-    new CustomItem(Material.BOW, "&4Foxy Weapons", "", "&a> Click to open"));
+    new CustomItem(Material.BOW, "&4Foxy武器", "", "&a> 點擊開啟"));
   public static Category materials = new Category(
     new NamespacedKey(FoxyMachines.getInstance(), "foxy_materials"),
-    new CustomItem(Material.STRING, "&4Foxy Materials", "", "&a> Click to open"));
+    new CustomItem(Material.STRING, "&4Foxy材料", "", "&a> 點擊開啟"));
   public static Category machines = new Category(
     new NamespacedKey(FoxyMachines.getInstance(), "foxy_machines"),
-    new CustomItem(Material.SMITHING_TABLE, "&4Foxy Machines", "", "&a> Click to open"));
+    new CustomItem(Material.SMITHING_TABLE, "&4Foxy機器", "", "&a> 點擊開啟"));
 
   public static final SlimefunItemStack ELECTRIC_WIND_STAFF = new SlimefunItemStack(
     "ELECTRIC_WIND_STAFF",
     Material.BLAZE_ROD,
-    "&bElectric Wind Staff",
+    "&b電力風法杖",
     "",
-    "&7Ride on the wind.",
+    "&7乘風飛行.",
     "",
     "&c&o&8\u21E8 &e\u26A1 &70 / 100 J"
    );
@@ -50,9 +50,9 @@ public final class Items{
    public static final SlimefunItemStack ELECTRIC_FIRE_STAFF = new SlimefunItemStack(
     "ELECTRIC_FIRE_STAFF",
     Material.BLAZE_ROD,
-    "&4Electric Fire Staff",
+    "&4電力火法杖",
     "",
-    "&7Create inferno.",
+    "&7製造火海.",
     "",
     "&c&o&8\u21E8 &e\u26A1 &70 / 100 J"
   );
@@ -66,9 +66,9 @@ public final class Items{
   public static final SlimefunItemStack ELECTRIC_FIRE_STAFF_II = new SlimefunItemStack(
     "ELECTRIC_FIRE_STAFF_II",
     Material.BLAZE_ROD,
-    "&4Electric Fire Staff &7- &eII",
+    "&4電力火法杖 &7- &eII",
     "",
-    "&7Fire, fire, fire!",
+    "&7火, 火, 更多火!",
     "",
     "&c&o&8\u21E8 &e\u26A1 &70 / 200 J"
     );
@@ -82,24 +82,24 @@ public final class Items{
   public static final SlimefunItemStack HEALING_BOW = new SlimefunItemStack(
     "HEALING_BOW",
     Material.BOW,
-    "&4Healing Bow",
-    "&cHealing II",
+    "&4治療弓",
+    "&c治療 II",
     "",
-    "&8Finally a support weapon."
+    "&8終於有支援武器了."
   );
 
   public static final SlimefunItemStack REINFORCED_STRING = new SlimefunItemStack(
    "REINFORCED_STRING",
    Material.STRING,
-   "&bReinforced String"
+   "&b強化線"
    );
 
   public static final SlimefunItemStack IMPROVEMENT_FORGE = new SlimefunItemStack(
     "IMPROVEMENT_FORGE",
     Material.SMITHING_TABLE,
-    "&bImprovement Forge",
+    "&b改進鍛造機",
     "",
-    "&7Used to improve Slimefun tools, weapons and armor.",
+    "&7用於改善黏液科技的工具,武器與盔甲.",
     "",
     LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
     LoreBuilder.powerPerSecond(ImprovementForge.ENERGY_CONSUMPTION)
@@ -108,17 +108,17 @@ public final class Items{
   public static final SlimefunItemStack IMPROVEMENT_CORE = new SlimefunItemStack(
     "IMPROVEMENT_CORE",
     "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFmZjJlYjQ5OGU1YzZhMDQ0ODRmMGM5Zjc4NWI0NDg0NzlhYjIxM2RmOTVlYzkxMTc2YTMwOGExMmFkZDcwIn19fQ==",
-    "&aImprovement Core",
+    "&a改進核心",
     "",
-    "&7Combine it with a tool in Improvement Forge to improve it."
+    "&7將其與工具放置進改進鍛造機,以改進它."
   );
 
   public static final SlimefunItemStack POTION_MIXER = new SlimefunItemStack(
     "POTION_MIXER",
     Material.BREWING_STAND	,
-    "&bPotion Mixer",
+    "&b藥水混合器",
     "",
-    "&7Used to mix potions.",
+    "&7用於混合藥水.",
     "",
     LoreBuilder.machine(MachineTier.GOOD, MachineType.MACHINE),
     LoreBuilder.powerPerSecond(PotionMixer.ENERGY_CONSUMPTION)
@@ -127,9 +127,9 @@ public final class Items{
   public static final SlimefunItemStack ELECTRIC_GOLD_REFINERY = new SlimefunItemStack(
     "ELECTRIC_GOLD_REFINERY",
     Material.GOLD_BLOCK	,
-    "&bElectric Gold Refinery",
+    "&b電動精煉機",
     "",
-    "&7Refines gold dust to gold ingots.",
+    "&7將金粉精煉成金錠.",
     "",
     LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
     LoreBuilder.powerPerSecond(ElectricGoldRefinery.ENERGY_CONSUMPTION)
