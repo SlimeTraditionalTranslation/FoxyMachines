@@ -1,5 +1,7 @@
 package me.gallowsdove.foxymachines;
 
+import me.gallowsdove.foxymachines.listeners.ChunkLoaderPlaceListener;
+import me.gallowsdove.foxymachines.listeners.ChunkLoaderBreakListener;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
@@ -17,6 +19,9 @@ public class FoxyMachines extends JavaPlugin implements SlimefunAddon {
   @Override
   public void onEnable() {
     instance = this;
+
+    getServer().getPluginManager().registerEvents(new ChunkLoaderPlaceListener(), this);
+    getServer().getPluginManager().registerEvents(new ChunkLoaderBreakListener(), this);
 
     ItemSetup.INSTANCE.init();
     ResearchSetup.INSTANCE.init();
