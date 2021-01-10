@@ -16,3 +16,4 @@ Foxy機器 添加了各種機器和工具至[Slimefun](https://github.com/Slimef
 * 改進鍛造機
 * 藥水混合器
 * 電動精煉機
+* 區塊加載器
