@@ -1,7 +1,8 @@
 package me.gallowsdove.foxymachines;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import me.gallowsdove.foxymachines.listeners.ChunkLoaderPlaceListener;
+import me.gallowsdove.foxymachines.listeners.BerryBushListener;
+import me.gallowsdove.foxymachines.listeners.BoostedRailListener;
 //import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
 //import me.mrCookieSlime.Slimefun.cscorelib2.updater.GitHubBuildsUpdater;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -19,7 +20,8 @@ public class FoxyMachines extends JavaPlugin implements SlimefunAddon {
             new GitHubBuildsUpdater(this, getFile(), "GallowsDove/FoxyMachines/master/").start();
         }*/
 
-        getServer().getPluginManager().registerEvents(new ChunkLoaderPlaceListener(), this);
+        getServer().getPluginManager().registerEvents(new BoostedRailListener(), this);
+        getServer().getPluginManager().registerEvents(new BerryBushListener(), this);
 
         ItemSetup.INSTANCE.init();
         ResearchSetup.INSTANCE.init();

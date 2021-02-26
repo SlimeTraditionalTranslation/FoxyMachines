@@ -12,6 +12,7 @@ Foxy機器 添加了各種機器和工具至[Slimefun](https://github.com/Slimef
 * 電力風法杖
 * 電力火法杖
 * 電力火法杖 II
+* 甜莓灌木叢修剪刀
 ## 武器
 * 治療弓
 ## 機器
@@ -19,3 +20,4 @@ Foxy機器 添加了各種機器和工具至[Slimefun](https://github.com/Slimef
 * 藥水混合器
 * 電動精煉機
 * 區塊加載器
+* 增強鐵軌

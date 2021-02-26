@@ -142,4 +142,45 @@ public final class Items{
             "&7穩定的材料."
     );
 
+    public static final SlimefunItemStack BOOSTED_RAIL = new SlimefunItemStack(
+            "BOOSTED_RAIL",
+            Material.RAIL,
+            "&f增強鐵軌",
+            "",
+            "&7支持2.5x速度."
+    );
+
+    public static final SlimefunItemStack BOOSTED_ACTIVATOR_RAIL = new SlimefunItemStack(
+            "BOOSTED_ACTIVATOR_RAIL",
+            Material.ACTIVATOR_RAIL,
+            "&f增強觸發鐵軌",
+            "",
+            "&7支持2.5x速度."
+    );
+
+    public static final SlimefunItemStack BOOSTED_DETECTOR_RAIL = new SlimefunItemStack(
+            "BOOSTED_DETECTOR_RAIL",
+            Material.DETECTOR_RAIL,
+            "&f增強感測鐵軌",
+            "",
+            "&7支持2.5x速度."
+    );
+
+    public static final SlimefunItemStack BOOSTED_POWERED_RAIL = new SlimefunItemStack(
+            "BOOSTED_POWERED_RAIL",
+            Material.POWERED_RAIL,
+            "&f增強動力鐵軌",
+            "",
+            "&7支持2.5x速度."
+    );
+
+    public static final SlimefunItemStack BERRY_BUSH_TRIMMER = new SlimefunItemStack(
+            "BERRY_BUSH_TRIMMER",
+            Material.SHEARS,
+            "&e甜莓灌木叢修剪刀",
+            "",
+            "&7去除甜莓灌木叢中的刺."
+    );
+
+
 }
