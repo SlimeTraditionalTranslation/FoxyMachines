@@ -4,6 +4,7 @@ import io.github.mooy1.infinitylib.presets.LorePreset;
 import io.github.thebusybiscuit.slimefun4.core.attributes.MachineTier;
 import io.github.thebusybiscuit.slimefun4.core.attributes.MachineType;
 import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
+import io.github.thebusybiscuit.slimefun4.utils.itemstack.ColoredFireworkStar;
 import me.gallowsdove.foxymachines.implementation.machines.ElectricGoldRefinery;
 import me.gallowsdove.foxymachines.implementation.machines.ForcefieldDome;
 import me.gallowsdove.foxymachines.implementation.machines.ImprovementForge;
@@ -11,6 +12,7 @@ import me.gallowsdove.foxymachines.implementation.machines.PotionMixer;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
+import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
@@ -539,4 +541,14 @@ public final class Items{
             Material.FEATHER,
             "&a鸚鵡羽毛"
     );
+
+    public static final SlimefunItemStack UNBREAKABLE_RUNE = new SlimefunItemStack(
+            "UNBREAKABLE_RUNE",
+            new ColoredFireworkStar(
+                    Color.fromRGB(0, 188, 0),
+                    "&7古代魔法符文 &8&l[&2&l牢不可破&8&l]",
+                    "",
+                    "&e將此符文放在掉落的物品上",
+                    "&e使其&2無法破壞"
+            ));
 }
