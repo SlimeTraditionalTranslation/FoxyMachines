@@ -10,6 +10,8 @@ Foxy機器 添加了各種機器和工具至[Slimefun](https://github.com/Slimef
 ### [下載英文原版](https://thebusybiscuit.github.io/builds/GallowsDove/FoxyMachines/master/)
 [![Build Status](https://thebusybiscuit.github.io/builds/GallowsDove/FoxyMachines/master/badge.svg)](https://thebusybiscuit.github.io/builds/GallowsDove/FoxyMachines/master)
 
+#### 不想要的物品可以在 items.yml 內禁用
+
 ## 工具
 * 電力風法杖
 * 電力火法杖
