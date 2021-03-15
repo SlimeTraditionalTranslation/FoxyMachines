@@ -34,6 +34,6 @@ permissions:
   foxymachines.bypass-chunk-loader-limit:
     description: Allows a player with the permission to place an unlimited amount of chunk loaders
     default: op
-  foxymachines.info:
-    description: Allows user to get information required to use the plugin. Should never be revoked.
-    default: true
+  foxymachines.admin:
+    description: Allows player to use admin-specific commands.
+    default: op

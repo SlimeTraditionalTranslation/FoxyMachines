@@ -551,4 +551,24 @@ public final class Items{
                     "&e將此符文放在掉落的物品上",
                     "&e使其&2無法破壞"
             ));
+
+    public static final SlimefunItemStack PIXIE_QUEEN_SPAWN_EGG = new SlimefunItemStack(
+            "PIXIE_QUEEN_SPAWN_EGG",
+            Material.CREEPER_SPAWN_EGG,
+            "&a精靈女王 生怪蛋"
+    );
+
+    public static final SlimefunItemStack PIXIE_QUEEN_HEART = new SlimefunItemStack(
+            "PIXIE_QUEEN_HEART",
+            Material.FERMENTED_SPIDER_EYE,
+            "&4精靈女王之心"
+    );
+
+    public static final SlimefunItemStack PIXIE_DUST = new SlimefunItemStack(
+            "PIXIE_DUST",
+            Material.SUGAR,
+            "&e精靈之粉",
+            "",
+            "力量 IV"
+    );
 }

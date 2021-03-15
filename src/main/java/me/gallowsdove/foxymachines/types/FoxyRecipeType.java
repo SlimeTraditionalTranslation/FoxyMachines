@@ -23,4 +23,6 @@ public class FoxyRecipeType {
     public static RecipeType FISHING = new RecipeType(new NamespacedKey(FoxyMachines.getInstance(), "fishing"),
             new CustomItem(Material.FISHING_ROD, "&b釣魚", "", "&e&o通過釣魚獲得此."));
     public static RecipeType QUEST = new RecipeType(new NamespacedKey(FoxyMachines.getInstance(), "quest"), QUEST_ITEM);
+    public static RecipeType CUSTOM_MOB_DROP = new RecipeType(new NamespacedKey(FoxyMachines.getInstance(), "mob_drop"),
+            new CustomItem(Material.DIAMOND_SWORD, "&a獨特怪物掉落", "", "&e&o通過殺死指定怪物獲得."));
 }
