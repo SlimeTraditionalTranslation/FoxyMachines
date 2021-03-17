@@ -9,8 +9,7 @@ import me.gallowsdove.foxymachines.implementation.consumables.SimpleConsumable;
 import me.gallowsdove.foxymachines.implementation.consumables.UnbreakableRune;
 import me.gallowsdove.foxymachines.implementation.machines.*;
 import me.gallowsdove.foxymachines.implementation.materials.SimpleMaterial;
-import me.gallowsdove.foxymachines.implementation.mobs.Pixie;
-import me.gallowsdove.foxymachines.implementation.mobs.PixieQueen;
+import me.gallowsdove.foxymachines.implementation.mobs.*;
 import me.gallowsdove.foxymachines.implementation.multiblock.SacrificialAltarPiece;
 import me.gallowsdove.foxymachines.implementation.multiblock.SacrificialAltarPressurePlate;
 import me.gallowsdove.foxymachines.implementation.tools.*;
@@ -197,11 +196,22 @@ final class ItemSetup {
                 Items.PIXIE_QUEEN_HEART, null, null,
                 null, null, null,
                 null, null, null
-                }, new PotionEffect[] {new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 400, 3)},
+                }, new PotionEffect[] {new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 1600, 3, false, false)},
+                8).register(FoxyMachines.getInstance());
+        new SimpleConsumable(Items.VILE_SEEDS, RecipeType.GRIND_STONE, new ItemStack[] {
+                Items.VILE_PUMPKIN, null, null,
+                null, null, null,
+                null, null, null
+                }, new PotionEffect[] {new PotionEffect(PotionEffectType.HEALTH_BOOST, 2700, 4, false, false)},
                 6).register(FoxyMachines.getInstance());
         new SimpleMaterial(Items.PIXIE_QUEEN_HEART, FoxyRecipeType.CUSTOM_MOB_DROP, new ItemStack[] {
                 null, null, null,
                 null, new CustomItem(Material.CREEPER_SPAWN_EGG, "&a精靈女王", "&7使用&a精靈女王 生怪蛋&7來招喚"), null,
+                null, null, null
+                }, 1).register(FoxyMachines.getInstance());
+        new SimpleMaterial(Items.VILE_PUMPKIN, FoxyRecipeType.CUSTOM_MOB_DROP, new ItemStack[] {
+                null, null, null,
+                null, new CustomItem(Material.SPIDER_SPAWN_EGG, "&c無頭騎士", "&7使用 &c無頭騎士 生怪蛋&7來招喚"), null,
                 null, null, null
                 }, 1).register(FoxyMachines.getInstance());
         new SlimefunItem(Items.category, Items.CURSED_SHARD, FoxyRecipeType.QUEST, new ItemStack[] {
@@ -324,10 +334,18 @@ final class ItemSetup {
                 Items.EQUANIMOUS_GEM, Items.DEMONIC_PLATE, Items.EQUANIMOUS_GEM,
                 Items.PARROT_FEATHER, new ItemStack(Material.EGG), Items.PARROT_FEATHER,
                 Items.EQUANIMOUS_GEM, Items.DEMONIC_PLATE, Items.EQUANIMOUS_GEM
-        }).register(FoxyMachines.getInstance());
+                }).register(FoxyMachines.getInstance());
+        new CustomMobSpawnEgg("HEADLESS_HORSEMAN", Items.HEADLESS_HORSEMAN_SPAWN_EGG, RecipeType.ANCIENT_ALTAR, new ItemStack[] {
+                Items.EQUANIMOUS_GEM, Items.DEMONIC_PLATE, Items.EQUANIMOUS_GEM,
+                Items.CURSED_RABBIT_PAW, Items.PIXIE_QUEEN_HEART, Items.CURSED_RABBIT_PAW,
+                Items.EQUANIMOUS_GEM, Items.DEMONIC_PLATE, Items.EQUANIMOUS_GEM
+                }).register(FoxyMachines.getInstance());
 
         new PixieQueen();
         new Pixie();
+        new RiddenSkeletonHorse();
+        new HeadlessHorseman();
+        new Helldog();
     }
 }
 
@@ -480,6 +498,14 @@ final class ResearchSetup {
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "pixie_dust"),
                 6669699, "力量提升.", 22)
                 .addItems(Items.PIXIE_DUST)
+                .register();
+        new Research(new NamespacedKey(FoxyMachines.getInstance(), "headless_horseman"),
+                6669700, "祝你好運", 56)
+                .addItems(Items.HEADLESS_HORSEMAN_SPAWN_EGG, Items.VILE_PUMPKIN)
+                .register();
+        new Research(new NamespacedKey(FoxyMachines.getInstance(), "vile_seeds"),
+                6669701, "生命提升.", 24)
+                .addItems(Items.VILE_SEEDS)
                 .register();
     }
 }

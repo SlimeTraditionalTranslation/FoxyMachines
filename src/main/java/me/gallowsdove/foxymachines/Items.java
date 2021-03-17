@@ -558,6 +558,12 @@ public final class Items{
             "&a精靈女王 生怪蛋"
     );
 
+    public static final SlimefunItemStack HEADLESS_HORSEMAN_SPAWN_EGG = new SlimefunItemStack(
+            "HEADLESS_HORSEMAN_SPAWN_EGG",
+            Material.SPIDER_SPAWN_EGG,
+            "&c無頭騎士 生怪蛋"
+    );
+
     public static final SlimefunItemStack PIXIE_QUEEN_HEART = new SlimefunItemStack(
             "PIXIE_QUEEN_HEART",
             Material.FERMENTED_SPIDER_EYE,
@@ -569,6 +575,20 @@ public final class Items{
             Material.SUGAR,
             "&e精靈之粉",
             "",
-            "力量 IV"
+            "&7力量 IV"
+    );
+
+    public static final SlimefunItemStack VILE_PUMPKIN = new SlimefunItemStack(
+            "VILE_PUMPKIN",
+            Material.CARVED_PUMPKIN,
+            "&c邪惡南瓜"
+    );
+
+    public static final SlimefunItemStack VILE_SEEDS = new SlimefunItemStack(
+            "VILE_SEEDS",
+            Material.MELON_SEEDS,
+            "&c邪惡種子",
+            "",
+            "&7生命值提升 V"
     );
 }
