@@ -595,10 +595,10 @@ public final class Items{
     public static final SlimefunItemStack ACRI_ARCUM = new SlimefunItemStack(
             "ACRI_ARCUM",
             Material.BOW,
-            "&eAcri Arcum",
+            "&e鋒利之弓",
             "",
-            "&7Damage III",
-            "&7Armor Piercing II"
+            "&7傷害 III",
+            "&7穿甲彈 II"
     );
     static {
         ACRI_ARCUM.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 7);

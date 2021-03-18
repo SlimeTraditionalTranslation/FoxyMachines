@@ -513,7 +513,7 @@ final class ResearchSetup {
                 .addItems(Items.VILE_SEEDS)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "acri_arcum"),
-                6669702, "Bow.", 46)
+                6669702, "弓.", 46)
                 .addItems(Items.ACRI_ARCUM)
                 .register();
     }

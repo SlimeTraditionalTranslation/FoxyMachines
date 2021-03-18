@@ -22,7 +22,7 @@ public class RiddenSkeletonHorse extends CustomMob {
             DamageCause.CRAMMING, DamageCause.POISON, DamageCause.BLOCK_EXPLOSION, DamageCause.ENTITY_EXPLOSION});
 
     public RiddenSkeletonHorse() {
-        super("SKELETON_HORSE", "Skeleton Horse", EntityType.SKELETON_HORSE, 2048);
+        super("SKELETON_HORSE", "骷髏馬", EntityType.SKELETON_HORSE, 2048);
     }
 
     @Override
