@@ -133,9 +133,9 @@
         </dependency>
 
         <dependency>
-            <groupId>io.github.xmikux</groupId>
-            <artifactId>InfinityLib</artifactId>
-            <version>f7557a4</version>
+            <groupId>com.github.xMikux</groupId>
+            <artifactId>infinitylib</artifactId>
+            <version>1757b51</version>
             <scope>compile</scope>
         </dependency>
 
