@@ -51,7 +51,7 @@ public class FoxyMachines extends AbstractAddon {
         }
     }
 
-  /*  @Override
+    /*@Override
     protected Metrics setupMetrics() {
         return new Metrics(this, 8991);
     }*/
@@ -80,7 +80,7 @@ public class FoxyMachines extends AbstractAddon {
         CustomBoss.removeBossBars();
     }
 
- /*   @Override
+    /*@Override
     public String getAutoUpdatePath() {
         return "auto-update";
     }*/
