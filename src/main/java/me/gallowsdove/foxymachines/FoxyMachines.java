@@ -1,7 +1,7 @@
 package me.gallowsdove.foxymachines;
 
 import io.github.mooy1.infinitylib.AbstractAddon;
-//import io.github.mooy1.infinitylib.bstats.bukkit.Metrics;
+import io.github.mooy1.infinitylib.bstats.bukkit.Metrics;
 import io.github.mooy1.infinitylib.commands.AbstractCommand;
 import lombok.SneakyThrows;
 import me.gallowsdove.foxymachines.abstracts.CustomBoss;
@@ -51,10 +51,10 @@ public class FoxyMachines extends AbstractAddon {
         }
     }
 
-    /*@Override
+    @Override
     protected Metrics setupMetrics() {
         return new Metrics(this, 8991);
-    }*/
+    }
 
     @Nonnull
     @Override
@@ -82,10 +82,10 @@ public class FoxyMachines extends AbstractAddon {
         }
     }
 
-    /*@Override
+    @Override
     public String getAutoUpdatePath() {
         return "auto-update";
-    }*/
+    }
 
     @Nonnull
     public static FoxyMachines getInstance() {

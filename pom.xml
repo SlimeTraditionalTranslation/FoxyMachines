@@ -143,7 +143,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.xMikux</groupId>
+            <groupId>com.github.Mooy1</groupId>
             <artifactId>infinitylib</artifactId>
             <version>cd3d15a1c6</version>
             <scope>compile</scope>
