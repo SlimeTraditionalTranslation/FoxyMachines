@@ -1,7 +1,8 @@
 # Foxy機器
 Foxy機器 添加了各種機器和工具至[Slimefun](https://github.com/Slimefun/Slimefun4).
+這是GallowsDove 的一個熱情專案.
 
-### 至少需要Java 11.
+### 至少需要 Java 16.
 
 此為**非官方**版本, 請勿在該作者的問題追蹤內回報!
 [原作者連結](https://github.com/GallowsDove/FoxyMachines)

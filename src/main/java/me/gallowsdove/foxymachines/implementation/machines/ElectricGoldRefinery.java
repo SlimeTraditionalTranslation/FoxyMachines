@@ -83,42 +83,18 @@ public class ElectricGoldRefinery extends SlimefunItem implements EnergyNetCompo
                     menu.replaceExistingItem(32, new CustomItem(Material.RED_STAINED_GLASS_PANE, "&6當前合成: &c無", "", "&e> 從左側選擇進行更改"));
                 } else {
                     switch (BlockStorage.getLocationInfo(b.getLocation(), "gold_recipe")) {
-                        case "0":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(4克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "1":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(6克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "2":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(8克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "3":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(10克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "4":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(12克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "5":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(14克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "6":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(16克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "7":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(18克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "8":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(20克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "9":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(22克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "10":
-                            menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(24克拉)", "", "&e> 從左側選擇進行更改"));
-                            break;
-                        case "11":
-                            menu.replaceExistingItem(32, new CustomItem(Material.RED_STAINED_GLASS_PANE, "&6當前合成: &c無", "", "&e> 從左側選擇進行更改"));
-                            break;
+                        case "0" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(4 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "1" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(6 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "2" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(8 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "3" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(10 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "4" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(12 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "5" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(14 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "6" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(16 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "7" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(18 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "8" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(20 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "9" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(22 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "10" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(24 克拉)", "", "&e> 從左側選擇進行更改"));
+                        case "11" -> menu.replaceExistingItem(32, new CustomItem(Material.RED_STAINED_GLASS_PANE, "&6當前合成: &無", "", "&e> 從左側選擇進行更改"));
                     }
                 }
             }
