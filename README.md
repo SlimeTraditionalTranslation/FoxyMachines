@@ -2,14 +2,15 @@
 Foxy機器 添加了各種機器和工具至[Slimefun](https://github.com/Slimefun/Slimefun4).
 這是GallowsDove 的一個熱情專案.
 
+> 此為**非官方**版本, 請勿在該作者問題追蹤內回報! <br>
+> [原作連結](https://github.com/GallowsDove/FoxyMachines) | [非官方Discord](https://discord.gg/GF4CwjFXT9)
+
 ### 至少需要 Java 16!
 
-此為**非官方**版本, 請勿在該作者的問題追蹤內回報!
-[原作者連結](https://github.com/GallowsDove/FoxyMachines)
-### [下載繁體翻譯版](https://xmikux.github.io/builds/xMikux/FoxyMachines/master/)
-[![Build Status](https://xmikux.github.io/builds/xMikux/FoxyMachines/master/badge.svg)](https://thebusybiscuit.github.io/builds/GallowsDove/FoxyMachines/master)
-### [下載英文原版](https://thebusybiscuit.github.io/builds/GallowsDove/FoxyMachines/master/)
-[![Build Status](https://thebusybiscuit.github.io/builds/GallowsDove/FoxyMachines/master/badge.svg)](https://thebusybiscuit.github.io/builds/GallowsDove/FoxyMachines/master)
+| 非官方繁體中文版 | 官方英文版 |
+| -------- | -------- |
+| 點下方圖片下載 | 點下方圖片下載 |
+| [![Build Status](https://xMikux.github.io/builds/SlimeTraditionalTranslation/FoxyMachines/master/badge.svg)](https://xMikux.github.io/builds/SlimeTraditionalTranslation/FoxyMachines/master) | [![Build Status](https://thebusybiscuit.github.io/builds/GallowsDove/FoxyMachines/master/badge.svg)](https://thebusybiscuit.github.io/builds/GallowsDove/FoxyMachines/master) |
 
 #### 不想要的物品可以在 items.yml 內禁用
 
