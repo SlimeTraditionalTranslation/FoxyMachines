@@ -5,6 +5,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.core.attributes.MachineTier;
 import io.github.thebusybiscuit.slimefun4.core.attributes.MachineType;
+import io.github.thebusybiscuit.slimefun4.core.attributes.Radioactivity;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
 import io.github.thebusybiscuit.slimefun4.utils.itemstack.ColoredFireworkStar;
@@ -18,7 +19,6 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.meta.ItemMeta;
-
 
 public final class Items{
 
@@ -620,10 +620,10 @@ public final class Items{
     public static final SlimefunItemStack POSITION_SELECTOR = new SlimefunItemStack(
             "POSITION_SELECTOR",
             Material.STICK,
-            "&ePosition Selector",
+            "&e位置選擇器",
             "",
-            "&7Left click a block to select primary position.",
-            "&7Right click a block to select secondary position.",
+            "&7左鍵點擊來選擇方塊的主要位置.",
+            "&7右鍵點擊來選擇方塊地次要位置.",
             "",
             "&c&o&8\u21E8 &e\u26A1 &70 / 200 J"
     );
@@ -631,13 +631,38 @@ public final class Items{
     public static final SlimefunItemStack FILL_WAND = new SlimefunItemStack(
             "FILL_WAND",
             Material.BLAZE_ROD,
-            "&eFill Wand",
+            "&e填充法杖",
             "",
-            "&7Select corner points with Position Selector.",
-            "&7Shift right click to select material.",
-            "&7Right click to fill an area.",
+            "&7使用位置選擇器選擇角落點.",
+            "&7Shift + 右鍵來選擇材料.",
+            "&7右鍵點擊來填充所選區域.",
             "",
-            "&7Material: &eNone",
+            "&7材料: &eNone",
             "&c&o&8\u21E8 &e\u26A1 &70 / 1000 J"
+    );
+
+    public static final SlimefunItemStack SPONGE_WAND = new SlimefunItemStack(
+            "SPONGE_WAND",
+            Material.BLAZE_ROD,
+            "&e海綿法杖",
+            "",
+            "&7使用位置選擇器選擇角落點.",
+            "&7右鍵點擊來移除所選的空間內的水與熔岩.",
+            "",
+            "&c&o&8\u21E8 &e\u26A1 &70 / 2000 J"
+    );
+
+    public static final SlimefunItemStack NUCLEAR_SALT = new SlimefunItemStack(
+            "NUCLEAR_SALT",
+            Material.LIME_DYE,
+            "&a核子鹽",
+            "",
+            LoreBuilder.radioactive(Radioactivity.VERY_HIGH)
+    );
+
+    public static final SlimefunItemStack COMPRESSED_SPONGE = new SlimefunItemStack(
+            "COMPRESSED_SPONGE",
+            Material.WET_SPONGE,
+            "&f壓縮海綿"
     );
 }

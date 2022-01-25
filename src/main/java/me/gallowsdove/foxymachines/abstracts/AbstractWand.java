@@ -41,6 +41,8 @@ public abstract class AbstractWand extends SlimefunItem implements NotPlaceable,
 
     protected abstract float getCostPerBBlock();
 
+    protected abstract boolean isRemoving();
+
     @Override
     public void preRegister() {
         addItemHandler(onUse());
@@ -55,50 +57,53 @@ public abstract class AbstractWand extends SlimefunItem implements NotPlaceable,
             PersistentDataContainer container = meta.getPersistentDataContainer();
 
             if (player.isSneaking()) {
-                if (e.getClickedBlock().isPresent()) {
+                if (!isRemoving() && e.getClickedBlock().isPresent()) {
 
                     Material material = e.getClickedBlock().get().getType();
 
                     if ((material.isBlock() && material.isSolid() && material.isOccluding() && !AbstractWand.BLACKLISTED.contains(material)) ||
                     AbstractWand.WHITELISTED.contains(material)) {
-                        player.sendMessage(ChatColor.LIGHT_PURPLE + "Material set to: " + material);
+                        player.sendMessage(ChatColor.LIGHT_PURPLE + "材料設定至: " + material);
                         container.set(AbstractWand.MATERIAL_KEY, PersistentDataType.STRING, material.toString());
                         List<String> lore = this.getItem().getItemMeta().getLore();
-                        lore.set(lore.size() - 2, ChatColor.GRAY + "Material: " + ChatColor.YELLOW + material);
+                        lore.set(lore.size() - 2, ChatColor.GRAY + "材料: " + ChatColor.YELLOW + material);
                         meta.setLore(lore);
                         itemInInventory.setItemMeta(meta);
                     }
                 }
             } else {
+                if (isRemoving() && !container.has(MATERIAL_KEY, PersistentDataType.STRING)) {
+                    container.set(MATERIAL_KEY, PersistentDataType.STRING, Material.AIR.toString());
+                }
+
                 List<Location> locs = getLocations(player);
 
                 if (locs.size() == 0) {
-                    player.sendMessage(ChatColor.RED + "Couldn't get valid locations! Make sure to select points with Position Selector.");
                     return;
                 }
 
                 Inventory inventory = player.getInventory();
                 if (!container.has(MATERIAL_KEY, PersistentDataType.STRING)) {
-                    player.sendMessage(ChatColor.RED + "Select a building material with Shift + Right Click!");
+                    player.sendMessage(ChatColor.RED + "使用 Shift + 右鍵 來選擇建築材料!");
                     return;
                 }
                 Material material = Material.getMaterial(container.get(MATERIAL_KEY, PersistentDataType.STRING));
 
                 ItemStack blocks = new ItemStack(material, locs.size());
 
-                if (inventory.containsAtLeast(blocks, locs.size())) {
+                if (isRemoving() || inventory.containsAtLeast(blocks, locs.size())) {
                     if (removeItemCharge(e.getItem(),getCostPerBBlock() * locs.size())) {
                         inventory.removeItem(blocks);
                         for (Location loc : locs) {
                             Bukkit.getScheduler().runTask(FoxyMachines.getInstance(), () -> loc.getBlock().setType(material));
                         }
                     } else {
-                        player.sendMessage(ChatColor.RED + "Your item doesn't have enough energy for that!");
-                        player.sendMessage(ChatColor.RED + "Energy needed: " + getCostPerBBlock() * locs.size());
+                        player.sendMessage(ChatColor.RED + "你沒有法杖沒有足夠的能量來做這件事!");
+                        player.sendMessage(ChatColor.RED + "需要能量: " + getCostPerBBlock() * locs.size());
                     }
                 } else {
-                    player.sendMessage(ChatColor.RED + "There aren't enough materials in your inventory!");
-                    player.sendMessage(ChatColor.RED + "Current items: " + Utils.countItemInInventory(inventory, blocks) + " Needed: " + locs.size());
+                    player.sendMessage(ChatColor.RED + "你的背包內沒有足夠的材料!");
+                    player.sendMessage(ChatColor.RED + "目前的物品數量: " + Utils.countItemInInventory(inventory, blocks) + " 需要的物品數量: " + locs.size());
                 }
             }
         };
