@@ -395,18 +395,14 @@ public class PotionMixer extends SlimefunItem implements EnergyNetComponent {
                     add("無法在釀造台上使用");
                 }};
                 potionMeta.setBasePotionData(new PotionData(PotionType.UNCRAFTABLE, false, false));
-                switch(potion1.getType()){
-                    case POTION:
-                        potionMeta.setDisplayName(ChatColor.AQUA + "混和藥水");
-                        break;
-                    case LINGERING_POTION:
-                        lore.add(ChatColor.RED + "由於Minecraft顯示的時間不正確");
-                        lore.add(ChatColor.RED + "錯誤,將其乘以4得到真實時間.");
+                switch (potion1.getType()) {
+                    case POTION -> potionMeta.setDisplayName(ChatColor.AQUA + "混和藥水");
+                    case LINGERING_POTION -> {
+                        lore.add(ChatColor.RED + "由於 Minecraft 顯示的時間不正確");
+                        lore.add(ChatColor.RED + "錯誤,將其乘以 4 得到真實時間.");
                         potionMeta.setDisplayName(ChatColor.AQUA + "混和滯留藥水");
-                        break;
-                    case SPLASH_POTION:
-                        potionMeta.setDisplayName(ChatColor.AQUA + "混和飛濺藥水");
-                        break;
+                    }
+                    case SPLASH_POTION -> potionMeta.setDisplayName(ChatColor.AQUA + "混和飛濺藥水");
                 }
                 potionMeta.setLore(lore);
                 potionMeta.setColor(Color.AQUA);
