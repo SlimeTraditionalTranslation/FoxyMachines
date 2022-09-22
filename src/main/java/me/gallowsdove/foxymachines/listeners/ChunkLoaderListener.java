@@ -42,12 +42,9 @@ public class ChunkLoaderListener implements Listener {
 
         NamespacedKey key = new NamespacedKey(FoxyMachines.getInstance(), "chunkloaders");
 
-        int i = 1;
-        if (p.getPersistentDataContainer().has(key, PersistentDataType.INTEGER)) {
-            i = p.getPersistentDataContainer().get(key, PersistentDataType.INTEGER) + 1;
-        }
+        int i = p.getPersistentDataContainer().getOrDefault(key, PersistentDataType.INTEGER, 0) + 1;
+        Config cfg = new Config(FoxyMachines.getInstance());
         if (!p.hasPermission("foxymachines.bypass-chunk-loader-limit")) {
-            Config cfg = new Config(FoxyMachines.getInstance());
             int max = cfg.getInt("max-chunk-loaders");
             if(max != 0 && max < i) {
                 p.sendMessage(ChatColor.LIGHT_PURPLE + "已放置最大區塊加載器數量: " + max);
@@ -55,9 +52,10 @@ public class ChunkLoaderListener implements Listener {
                 return;
             }
         }
-
-        if (Slimefun.getGPSNetwork().getNetworkComplexity(p.getUniqueId()) < 7500*i) {
-            p.sendMessage(ChatColor.LIGHT_PURPLE + "提高GPS訊號強度來放置更多區塊加載器.");
+        int currentComplexity = Slimefun.getGPSNetwork().getNetworkComplexity(p.getUniqueId());
+        int requiredComplexity = cfg.getInt("gps-complexity-per-loader") * i;
+        if (currentComplexity < requiredComplexity) {
+            p.sendMessage(ChatColor.LIGHT_PURPLE + "目前你的 GPS 訊號強度是 " + currentComplexity + "/" + requiredComplexity + ",  你需要提高 GPS 訊號強度才能放置另一個區塊加載器.");
             e.setCancelled(true);
             return;
         }
@@ -67,4 +65,3 @@ public class ChunkLoaderListener implements Listener {
         BlockStorage.addBlockInfo(b, "owner", p.getUniqueId().toString());
     }
 }
-
