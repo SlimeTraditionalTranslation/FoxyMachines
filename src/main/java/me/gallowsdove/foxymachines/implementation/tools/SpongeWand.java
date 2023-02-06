@@ -91,7 +91,7 @@ public class SpongeWand extends AbstractWand {
                 }
             }
         }
-        if (locs.size() == 0) {
+        if (locs.isEmpty()) {
             player.sendMessage(ChatColor.RED + "所給的選定點並未找到有效的位置!");
         }
 
