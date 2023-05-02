@@ -430,7 +430,7 @@ public final class Items{
     public static final SlimefunItemStack CELESTIAL_SWORD = new SlimefunItemStack(
             "CELESTIAL_SWORD",
             Material.NETHERITE_SWORD,
-            "&e天劍",
+            "&e天界之劍",
             "&7神之重擊 II",
             "",
             "&7忽略 20% 的抗性."
@@ -549,13 +549,17 @@ public final class Items{
     public static final SlimefunItemStack CURSED_SHARD = new SlimefunItemStack(
             "CURSED_SHARD",
             Material.NETHERITE_SCRAP,
-            "&c詛咒碎片"
+            "&c詛咒碎片",
+            "&7製作材料",
+            "&7當丟入祭壇時將會重置任務..."
     );
 
     public static final SlimefunItemStack CELESTIAL_SHARD = new SlimefunItemStack(
             "CELESTIAL_SHARD",
             Material.PRISMARINE_SHARD,
-            "&e天界碎片"
+            "&e天界碎片",
+            "&7製作材料",
+            "&7當丟入祭壇時將會重置任務..."
     );
 
     public static final SlimefunItemStack EQUANIMOUS_GEM = new SlimefunItemStack(
