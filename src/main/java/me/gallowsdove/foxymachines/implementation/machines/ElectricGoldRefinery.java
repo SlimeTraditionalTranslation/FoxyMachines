@@ -33,6 +33,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -59,7 +60,7 @@ public class ElectricGoldRefinery extends SlimefunItem implements EnergyNetCompo
         });
 
 
-        new BlockMenuPreset(getId(), "&6電動精煉機") {
+        new BlockMenuPreset(getId(), GetText.tr("&6Electric Gold Refinery")) {
 
             @Override
             public void init() {
@@ -80,21 +81,21 @@ public class ElectricGoldRefinery extends SlimefunItem implements EnergyNetCompo
                 if (!BlockStorage.hasBlockInfo(b) ||
                         BlockStorage.getLocationInfo(b.getLocation(), "gold_recipe") == null ||
                         BlockStorage.getLocationInfo(b.getLocation(), "gold_recipe").equals("11")) {
-                    menu.replaceExistingItem(32, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&6當前合成: &c無", "", "&e> 從左側選擇進行更改"));
+                    menu.replaceExistingItem(32, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, GetText.tr("&6Current Recipe: &cNONE"), "", GetText.tr("&e> Choose on the left to change it")));
                 } else {
                     switch (BlockStorage.getLocationInfo(b.getLocation(), "gold_recipe")) {
-                        case "0" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(4 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "1" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(6 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "2" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(8 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "3" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(10 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "4" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(12 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "5" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(14 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "6" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(16 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "7" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(18 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "8" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(20 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "9" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(22 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "10" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(24 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "11" -> menu.replaceExistingItem(32, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&6當前合成: &c無", "", "&e> 從左側選擇進行更改"));
+                        case "0" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(4 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "1" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(6 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "2" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(8 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "3" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(10 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "4" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(12 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "5" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(14 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "6" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(16 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "7" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(18 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "8" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(20 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "9" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(22 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "10" -> menu.replaceExistingItem(32, new CustomItemStack(Material.GOLD_INGOT, GetText.tr("&6Current Recipe: &fGold Ingot &7(24 Carat)"), "", GetText.tr("&e> Choose on the left to change it")));
+                        case "11" -> menu.replaceExistingItem(32, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, GetText.tr("&6Current Recipe: &cNONE"), "", GetText.tr("&e> Choose on the left to change it")));
                     }
                 }
             }
@@ -322,7 +323,7 @@ public class ElectricGoldRefinery extends SlimefunItem implements EnergyNetCompo
         }
 
         preset.addItem(23, new CustomItemStack(Material.BLACK_STAINED_GLASS_PANE, " "), ChestMenuUtils.getEmptyClickHandler());
-        preset.addItem(46, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&c無"), ChestMenuUtils.getEmptyClickHandler());
+        preset.addItem(46, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, GetText.tr("&cNONE")), ChestMenuUtils.getEmptyClickHandler());
 
         NamespacedKey key = new NamespacedKey(FoxyMachines.getInstance(), "nonstackable");
 

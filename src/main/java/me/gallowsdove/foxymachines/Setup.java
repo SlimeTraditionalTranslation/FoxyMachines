@@ -1,5 +1,7 @@
 package me.gallowsdove.foxymachines;
 
+import de.unpixelt.locale.Locale;
+import de.unpixelt.locale.Translate;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
@@ -47,6 +49,7 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.mini2Dx.gettext.GetText;
 
 final class ItemSetup {
     static final ItemSetup INSTANCE = new ItemSetup();
@@ -168,42 +171,42 @@ final class ItemSetup {
                 }, 1).register(FoxyMachines.getInstance());
         new SimpleMaterial(Items.ALTAR_ITEM_GROUP, Items.BLOOD, FoxyRecipeType.SACRIFICIAL_ALTAR, new ItemStack[] {
                 null, null, null,
-                null, new CustomItemStack(Material.NETHERITE_SWORD, "&e怪物掉落"), null,
+                null, new CustomItemStack(Material.NETHERITE_SWORD, GetText.tr("&eMob Drop")), null,
                 null, null, null
                 }, 1).register(FoxyMachines.getInstance());
         new SimpleMaterial(Items.ALTAR_ITEM_GROUP, Items.CURSED_RABBIT_PAW, FoxyRecipeType.SACRIFICIAL_ALTAR, new ItemStack[] {
                 null, null, null,
-                null, new CustomItemStack(Material.RABBIT_SPAWN_EGG, "&e兔子掉落"), null,
+                null, new CustomItemStack(Material.RABBIT_SPAWN_EGG, GetText.tr("&eRabbit Drop")), null,
                 null, null, null
                 }, 1).register(FoxyMachines.getInstance());
         new SimpleMaterial(Items.ALTAR_ITEM_GROUP, Items.HUMAN_SKULL, FoxyRecipeType.SACRIFICIAL_ALTAR, new ItemStack[] {
                 null, null, null,
-                null, new CustomItemStack(Material.PLAYER_HEAD, "&e玩家掉落"), null,
+                null, new CustomItemStack(Material.PLAYER_HEAD, GetText.tr("&ePlayer Drop")), null,
                 null, null, null
                 }, 1).register(FoxyMachines.getInstance());
         new SimpleMaterial(Items.ALTAR_ITEM_GROUP, Items.TROPICAL_FISH_SCALE, FoxyRecipeType.SACRIFICIAL_ALTAR, new ItemStack[] {
                 null, null, null,
-                null, new CustomItemStack(Material.TROPICAL_FISH, "&e熱帶魚掉落"), null,
+                null, new CustomItemStack(Material.TROPICAL_FISH, GetText.tr("&eTropical Fish Drop")), null,
                 null, null, null
                 }, 1).register(FoxyMachines.getInstance());
         new SimpleMaterial(Items.ALTAR_ITEM_GROUP, Items.POLAR_FOX_HIDE, FoxyRecipeType.SACRIFICIAL_ALTAR, new ItemStack[] {
                 null, null, null,
-                null, new CustomItemStack(Material.POLAR_BEAR_SPAWN_EGG, "&e北極狐狸掉落"), null,
+                null, new CustomItemStack(Material.POLAR_BEAR_SPAWN_EGG, GetText.tr("&ePolar Fox Drop")), null,
                 null, null, null
                 }, 1).register(FoxyMachines.getInstance());
         new SimpleMaterial(Items.ALTAR_ITEM_GROUP, Items.MAGMA_ESSENCE, FoxyRecipeType.SACRIFICIAL_ALTAR, new ItemStack[] {
                 null, null, null,
-                null, new CustomItemStack(Material.MAGMA_CUBE_SPAWN_EGG, "&e岩漿立方怪掉落"), null,
+                null, new CustomItemStack(Material.MAGMA_CUBE_SPAWN_EGG, GetText.tr("&eMagma Cube Drop")), null,
                 null, null, null
                 }, 1).register(FoxyMachines.getInstance());
         new SimpleMaterial(Items.ALTAR_ITEM_GROUP, Items.PARROT_FEATHER, FoxyRecipeType.SACRIFICIAL_ALTAR, new ItemStack[] {
                 null, null, null,
-                null, new CustomItemStack(Material.PARROT_SPAWN_EGG, "&e鸚鵡掉落"), null,
+                null, new CustomItemStack(Material.PARROT_SPAWN_EGG, GetText.tr("&eParrot Drop")), null,
                 null, null, null
                 }, 1).register(FoxyMachines.getInstance());
         new SimpleMaterial(Items.ALTAR_ITEM_GROUP, Items.UNHOLY_WITHER_SKELETON_BONE, FoxyRecipeType.SACRIFICIAL_ALTAR, new ItemStack[] {
                 null, null, null,
-                null, new CustomItemStack(Material.WITHER_SKELETON_SPAWN_EGG, "&e凋零骷髏掉落"), null,
+                null, new CustomItemStack(Material.WITHER_SKELETON_SPAWN_EGG, GetText.tr("&eWither Skeleton Drop")), null,
                 null, null, null
                 }, 1).register(FoxyMachines.getInstance());
         new SimpleMaterial(Items.BLOOD_INFUSED_SKULL, RecipeType.ANCIENT_ALTAR, new ItemStack[] {
@@ -242,12 +245,12 @@ final class ItemSetup {
                     6).register(FoxyMachines.getInstance());
             new SimpleMaterial(Items.BOSSES_ITEM_GROUP, Items.PIXIE_QUEEN_HEART, FoxyRecipeType.CUSTOM_MOB_DROP, new ItemStack[]{
                     null, null, null,
-                    null, new CustomItemStack(Material.CREEPER_SPAWN_EGG, "&a精靈女王", "&7使用&a精靈女王 生怪蛋&7來招喚"), null,
+                    null, new CustomItemStack(Material.CREEPER_SPAWN_EGG, GetText.tr("&aPixie Queen"), GetText.tr("&7Summon it using &aPixie Queen Spawn Egg")), null,
                     null, null, null
                     }, 1).register(FoxyMachines.getInstance());
             new SimpleMaterial(Items.BOSSES_ITEM_GROUP, Items.VILE_PUMPKIN, FoxyRecipeType.CUSTOM_MOB_DROP, new ItemStack[]{
                     null, null, null,
-                    null, new CustomItemStack(Material.SPIDER_SPAWN_EGG, "&c無頭騎士", "&7使用&c無頭騎士 生怪蛋&7來招喚"), null,
+                    null, new CustomItemStack(Material.SPIDER_SPAWN_EGG, GetText.tr("&cHeadless Horseman"), GetText.tr("&7Summon it using &cHeadless Horseman Spawn Egg")), null,
                     null, null, null
                     }, 1).register(FoxyMachines.getInstance());
         }
@@ -421,9 +424,9 @@ final class ItemSetup {
                     SlimefunItemStack stack = new SlimefunItemStack(
                             "GHOST_BLOCK_" + material.name().toUpperCase(),
                             material,
-                            "&f鬼方塊: &6" + StringUtils.capitalize(material.name().replace("_", " ").toLowerCase()),
+                            GetText.tr("&fGhost Block: &6") + Translate.getMaterial(Locale.zh_tw, material),
                             "",
-                            "&7無形的方塊.");
+                            GetText.tr("&7An intangible block."));
 
                     new GhostBlock(stack).register(FoxyMachines.getInstance());
                 }
@@ -448,172 +451,172 @@ final class ResearchSetup {
         boolean customMobs = FoxyMachines.getInstance().getConfig().getBoolean("custom-mobs");
 
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "electric_wind_staff"),
-                6669666, "在風中使用電力", 22)
+                6669666, GetText.tr("On the wind with the power of electricity"), 22)
                 .addItems(Items.ELECTRIC_WIND_STAFF)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "electric_fire_staffs"),
-                6669667, "製造火海", 34)
+                6669667, GetText.tr("Create inferno"), 34)
                 .addItems(Items.ELECTRIC_FIRE_STAFF, Items.ELECTRIC_FIRE_STAFF_II)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "healing_bow"),
-                6669668, "支援", 30)
+                6669668, GetText.tr("Support"), 30)
                 .addItems(Items.HEALING_BOW)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "reinforced_string"),
-                6669669, "更堅硬, 更好, 更強", 18)
+                6669669, GetText.tr("Harder, Better, Stronger"), 18)
                 .addItems(Items.REINFORCED_STRING)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "improvement_forge"),
-                6669670, "超越想像", 48)
+                6669670, GetText.tr("Beyond imaginations"), 48)
                 .addItems(Items.IMPROVEMENT_FORGE)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "improvement_core"),
-                6669671, "向上1", 28)
+                6669671, GetText.tr("Up 1"), 28)
                 .addItems(Items.IMPROVEMENT_CORE)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "potion_mixer"),
-                6669672, "前所未有的釀造", 28)
+                6669672, GetText.tr("Brewing like never before"), 28)
                 .addItems(Items.POTION_MIXER)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "electric_gold_refinery"),
-                6669673, "擺脫治煉爐", 28)
+                6669673, GetText.tr("Get rid of the smelteries"), 28)
                 .addItems(Items.ELECTRIC_GOLD_REFINERY)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "chunk_loader"),
-                6669674, "相當有用的工具", 52)
+                6669674, GetText.tr("Quite a useful utility"), 52)
                 .addItems(Items.CHUNK_LOADER)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "stabilized_blistering_block"),
-                6669675, "什麼材料", 26)
+                6669675, GetText.tr("What a material"), 26)
                 .addItems(Items.STABILIZED_BLISTERING_BLOCK)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "boosted_rail"),
-                6669676, "更快, 更好, 更強", 16)
+                6669676, GetText.tr("Faster, Better, Stronger"), 16)
                 .addItems(Items.BOOSTED_RAIL, Items.BOOSTED_ACTIVATOR_RAIL, Items.BOOSTED_DETECTOR_RAIL, Items.BOOSTED_POWERED_RAIL)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "berry_bush_trimmer"),
-                6669677, "注意安全!", 20)
+                6669677, GetText.tr("Stay safe!"), 20)
                 .addItems(Items.BERRY_BUSH_TRIMMER)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "forcefield_dome"),
-                6669678, "一個安全的空間", 66)
+                6669678, GetText.tr("A safe space"), 66)
                 .addItems(Items.FORCEFIELD_DOME)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "remote_controller"),
-                6669679, "從遙遠的地方", 32)
+                6669679, GetText.tr("From far away"), 32)
                 .addItems(Items.REMOTE_CONTROLLER)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "ingots"),
-                6669680, "更多錠", 24)
+                6669680, GetText.tr("More ingots"), 24)
                 .addItems(Items.DEMONIC_INGOT, Items.AQUATIC_NETHERITE_INGOT, Items.DAMIENIUM, Items.SWEET_INGOT, Items.SWEETENED_SWEET_INGOT)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "sacrificial_altar"),
-                6669681, "獻祭", 40)
+                6669681, GetText.tr("Sacrifice"), 40)
                 .addItems(Items.SACRIFICIAL_ALTAR_BLACKSTONE_BRICK_STAIRS, Items.SACRIFICIAL_ALTAR_BLACKSTONE_BRICK_WALL,
                         Items.SACRIFICIAL_ALTAR_BLACKSTONE_BRICKS, Items.SACRIFICIAL_ALTAR_BLACKSTONE_PRESSURE_PLATE,
                         Items.SACRIFICIAL_ALTAR_SOUL_TORCH)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "sacrificial_altar_drops"),
-                6669682, "盈利", 28)
+                6669682, GetText.tr("Profit"), 28)
                 .addItems(Items.CURSED_RABBIT_PAW, Items.HUMAN_SKULL, Items.BLOOD, Items.UNHOLY_WITHER_SKELETON_BONE,
                         Items.POLAR_FOX_HIDE, Items.MAGMA_ESSENCE, Items.TROPICAL_FISH_SCALE, Items.PARROT_FEATHER)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "demonic_plate"),
-                6669683, "惡魔板", 16)
+                6669683, GetText.tr("Demonic plate"), 16)
                 .addItems(Items.DEMONIC_PLATE)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "forcefield_materials"),
-                6669684, "在前往穹頂的途中", 36)
+                6669684, GetText.tr("On my way to Forcefield"), 36)
                 .addItems(Items.FORCEFIELD_ENGINE, Items.FORCEFIELD_STABILIZER)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "wireless_transmitter"),
-                6669685, "沒有更多的電線", 26)
+                6669685, GetText.tr("No more wires"), 26)
                 .addItems(Items.WIRELESS_TRANSMITTER)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "poseidons_fishing_rod"),
-                6669686, "借助波塞冬的力量", 32)
+                6669686, GetText.tr("With the power of Poseidon"), 32)
                 .addItems(Items.POSEIDONS_FISHING_ROD)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "fishing_materials"),
-                6669687, "更好的釣魚", 26)
+                6669687, GetText.tr("Better Fishing"), 26)
                 .addItems(Items.POSEIDONS_BLESSING)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "swords"),
-                6669688, "更好的劍", 44)
+                6669688, GetText.tr("Better Swords"), 44)
                 .addItems(Items.CURSED_SWORD, Items.CELESTIAL_SWORD)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "magic_lumps"),
-                6669689, "更多的顆粒, 更多的魔法", 12)
+                6669689, GetText.tr("More Lumps, More Magic"), 12)
                 .addItems(Items.MAGIC_LUMP_4, Items.MAGIC_LUMP_5)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "purified_bone"),
-                6669690, "更多的顆粒, 更多的魔法", 22)
+                6669690, GetText.tr("More Lumps, More Magic"), 22)
                 .addItems(Items.PURIFIED_BONE, Items.PURE_BONE_DUST)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "blood_infused_skull"),
-                6669691, "血腥", 16)
+                6669691, GetText.tr("Bloodier"), 16)
                 .addItems(Items.BLOOD_INFUSED_SKULL)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "armor"),
-                6669692, "更好的裝備", 42)
+                6669692, GetText.tr("Better Armor"), 42)
                 .addItems(Items.AQUATIC_HELMET, Items.RESISTANT_CHESTPLATE, Items.FIERY_LEGGINGS, Items.LIGHT_BOOTS)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "bloody_bucket"),
-                6669693, "血腥之桶", 20)
+                6669693, GetText.tr("Bloody Bucket"), 20)
                 .addItems(Items.BUCKET_OF_BLOOD)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "equanimous_gem"),
-                6669694, "平衡, 應有的事物", 36)
+                6669694, GetText.tr("Balanced, as things should be"), 36)
                 .addItems(Items.EQUANIMOUS_GEM)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "ultimate_sword"),
-                6669695, "終極劍", 52)
+                6669695, GetText.tr("The Ultimate Sword"), 52)
                 .addItems(Items.ELUCIDATOR)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "armor_frame"),
-                6669696, "裝備框架", 24)
+                6669696, GetText.tr("Armor Frame"), 24)
                 .addItems(Items.AQUATIC_HELMET_FRAME, Items.RESISTANT_CHESTPLATE_FRAME, Items.FIERY_LEGGINGS_FRAME, Items.LIGHT_BOOTS_FRAME)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "unbreakable_rune"),
-                6669697, "誰還需要鐵砧?", 32)
+                6669697, GetText.tr("Who needs anvil?"), 32)
                 .addItems(Items.UNBREAKABLE_RUNE)
                 .register();
         if (customMobs) {
             new Research(new NamespacedKey(FoxyMachines.getInstance(), "pixie_queen"),
-                    6669698, "一個知名的對手.", 52)
+                    6669698, GetText.tr("A worthy opponent."), 52)
                     .addItems(Items.PIXIE_QUEEN_SPAWN_EGG, Items.PIXIE_QUEEN_HEART)
                     .register();
             new Research(new NamespacedKey(FoxyMachines.getInstance(), "pixie_dust"),
-                    6669699, "力量提升.", 22)
+                    6669699, GetText.tr("Strength Boost."), 22)
                     .addItems(Items.PIXIE_DUST)
                     .register();
             new Research(new NamespacedKey(FoxyMachines.getInstance(), "headless_horseman"),
-                    6669700, "祝你好運", 56)
+                    6669700, GetText.tr("Good luck"), 56)
                     .addItems(Items.HEADLESS_HORSEMAN_SPAWN_EGG, Items.VILE_PUMPKIN)
                     .register();
             new Research(new NamespacedKey(FoxyMachines.getInstance(), "vile_seeds"),
-                    6669701, "生命提升.", 24)
+                    6669701, GetText.tr("Health Boost."), 24)
                     .addItems(Items.VILE_SEEDS)
                     .register();
         }
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "acri_arcum"),
-                6669702, "弓.", 46)
+                6669702, GetText.tr("Bow."), 46)
                 .addItems(Items.ACRI_ARCUM)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "ghost_block_remover"),
-                6669703, "鬼方塊移除器.", 44)
+                6669703, GetText.tr("Ghost Block Remover."), 44)
                 .addItems(Items.GHOST_BLOCK_REMOVER)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "build_wands"),
-                6669704, "讓建築更加容易.", 36)
+                6669704, GetText.tr("Building made easier."), 36)
                 .addItems(Items.POSITION_SELECTOR, Items.FILL_WAND, Items.SPONGE_WAND)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "nuclear_salt"),
-                6669704, "別忘記你的防護服.", 16)
+                6669704, GetText.tr("Don't forget your hazmat suit."), 16)
                 .addItems(Items.NUCLEAR_SALT)
                 .register();
         new Research(new NamespacedKey(FoxyMachines.getInstance(), "compressed_sponge"),
-                6669704, "成功.", 14)
+                6669704, GetText.tr("Succ."), 14)
                 .addItems(Items.COMPRESSED_SPONGE)
                 .register();
     }

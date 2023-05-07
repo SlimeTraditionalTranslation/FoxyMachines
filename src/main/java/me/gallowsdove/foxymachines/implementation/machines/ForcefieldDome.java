@@ -27,6 +27,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.io.*;
@@ -123,24 +124,24 @@ public final class ForcefieldDome extends SlimefunItem implements EnergyNetCompo
                     if (active.equals("false")) {
                         if (getCharge(b.getLocation()) >= ENERGY_CONSUMPTION) {
                             setDomeActive(b);
-                            e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "已啟動穹頂.");
+                            e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("The dome has been activated."));
 
                             BlockStorage.addBlockInfo(b, "cooldown", "true");
                             Scheduler.runAsync(200, () ->
                                     BlockStorage.addBlockInfo(b, "cooldown", "false"));
                         } else {
-                            e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你沒有足夠的能源.");
+                            e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("You don't have enough energy."));
                         }
                     } else {
                         setDomeInactive(b);
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "已停用穹頂.");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("The dome has been deactivated."));
 
                         BlockStorage.addBlockInfo(b, "cooldown", "true");
                         Scheduler.runAsync(200, () ->
                                 BlockStorage.addBlockInfo(b, "cooldown", "false"));
                     }
                 } else {
-                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你必須等待至少 10 秒才能再次啟動穹頂一次.");
+                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("You must wait at least 10 seconds before activating the dome again."));
                 }
                 e.cancel();
             }
@@ -196,24 +197,24 @@ public final class ForcefieldDome extends SlimefunItem implements EnergyNetCompo
             if (active.equals("false")) {
                 if (getCharge(b.getLocation()) >= ENERGY_CONSUMPTION) {
                     setDomeActive(b);
-                    p.sendMessage(ChatColor.LIGHT_PURPLE + "已啟動穹頂.");
+                    p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("The dome has been activated."));
 
                     BlockStorage.addBlockInfo(b, "cooldown", "true");
                     Scheduler.runAsync(200, () ->
                             BlockStorage.addBlockInfo(b, "cooldown", "false"));
                 } else {
-                    p.sendMessage(ChatColor.LIGHT_PURPLE + "你沒有足夠的能源.");
+                    p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("You don't have enough energy."));
                 }
             } else {
                 setDomeInactive(b);
-                p.sendMessage(ChatColor.LIGHT_PURPLE + "已停用穹頂.");
+                p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("The dome has been deactivated."));
 
                 BlockStorage.addBlockInfo(b, "cooldown", "true");
                 Scheduler.runAsync(200, () ->
                         BlockStorage.addBlockInfo(b, "cooldown", "false"));
             }
         } else {
-            p.sendMessage(ChatColor.LIGHT_PURPLE + "你必須等待至少10秒才能再次啟動穹頂一次.");
+            p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("You must wait at least 10 seconds before activating the dome again."));
         }
     }
 

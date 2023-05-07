@@ -9,12 +9,13 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.EntityTargetEvent;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 
 public class Pixie extends CustomMob {
     public Pixie() {
-        super("PIXIE", "精靈", EntityType.VEX, 5);
+        super("PIXIE", GetText.tr("Pixie"), EntityType.VEX, 5);
     }
 
     @Override

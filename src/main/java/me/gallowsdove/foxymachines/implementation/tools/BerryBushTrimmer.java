@@ -17,6 +17,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.io.*;
@@ -66,7 +67,7 @@ public class BerryBushTrimmer extends SlimefunItem {
 
                     p.getInventory().setItemInMainHand(shears);
                 } else {
-                    p.sendMessage(ChatColor.LIGHT_PURPLE + "這個甜莓灌木叢已經修剪好了!");
+                    p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("This berry bush is already trimmed!"));
                 }
             }
 

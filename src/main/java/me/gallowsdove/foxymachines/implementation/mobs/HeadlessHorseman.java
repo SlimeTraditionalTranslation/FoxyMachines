@@ -23,6 +23,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.Collection;
@@ -39,7 +40,7 @@ public class HeadlessHorseman extends CustomBoss {
     private static final NamespacedKey PATTERN_KEY = new NamespacedKey(FoxyMachines.getInstance(), "pattern");
 
     public HeadlessHorseman() {
-        super("HEADLESS_HORSEMAN", ChatColor.RED + "無頭騎士", EntityType.SKELETON, 1,
+        super("HEADLESS_HORSEMAN", ChatColor.RED + GetText.tr("Headless Horseman"), EntityType.SKELETON, 1,
                 DamageCause.BLOCK_EXPLOSION, DamageCause.ENTITY_EXPLOSION, DamageCause.THORNS);
     }
 
@@ -64,7 +65,7 @@ public class HeadlessHorseman extends CustomBoss {
     @Nonnull
     @Override
     protected BossBarStyle getBossBarStyle() {
-        return new BossBarStyle("無頭騎士", BarColor.RED, BarStyle.SOLID, BarFlag.PLAY_BOSS_MUSIC);
+        return new BossBarStyle(GetText.tr("Headless Horseman"), BarColor.RED, BarStyle.SOLID, BarFlag.PLAY_BOSS_MUSIC);
     }
 
     @Override

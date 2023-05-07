@@ -16,6 +16,7 @@ import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -81,13 +82,13 @@ public class UnbreakableRune extends SimpleSlimefunItem<ItemDropHandler> {
                         setUnbreakable(itemStack);
                         l.getWorld().dropItemNaturally(l, itemStack);
 
-                        p.sendMessage(ChatColor.LIGHT_PURPLE + "你的物品現在是無法破壞.");
+                        p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Your item is now Unbreakable."));
                     } else {
-                        p.sendMessage(ChatColor.LIGHT_PURPLE + "你的物品無法弄成無法破壞");
+                        p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Your item could not be made Unbreakable"));
                     }
                 });
             } else {
-                p.sendMessage(ChatColor.LIGHT_PURPLE + "無法將你的物品弄成無法破壞");
+                p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Your item could not be made Unbreakable"));
             }
         }
     }

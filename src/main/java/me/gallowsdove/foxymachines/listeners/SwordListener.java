@@ -21,6 +21,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.mini2Dx.gettext.GetText;
 
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
@@ -117,10 +118,10 @@ public class SwordListener implements Listener {
 
             if (SlimefunUtils.isItemSimilar(inventory.getItemInMainHand(), Items.CURSED_SWORD, false, false)) {
                 inventory.addItem(new SlimefunItemStack(Items.CURSED_SHARD, 1));
-                p.sendMessage(ChatColor.RED + "詛咒之劍非常的高興。");
+                p.sendMessage(ChatColor.RED + GetText.tr("The Cursed Sword is pleased."));
             } else if (SlimefunUtils.isItemSimilar(inventory.getItemInMainHand(), Items.CELESTIAL_SWORD, false, false)) {
                 inventory.addItem(new SlimefunItemStack(Items.CELESTIAL_SHARD, 1));
-                p.sendMessage(ChatColor.YELLOW + "天界之劍非常的高興。");
+                p.sendMessage(ChatColor.YELLOW + GetText.tr("The Celestial Sword is pleased."));
             }
 
             QuestUtils.nextQuestLine(p);

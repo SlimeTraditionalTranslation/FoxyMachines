@@ -1,5 +1,7 @@
 package me.gallowsdove.foxymachines.implementation.tools;
 
+import de.unpixelt.locale.Locale;
+import de.unpixelt.locale.Translate;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
@@ -12,6 +14,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.FallingBlock;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 
@@ -39,9 +42,9 @@ public class GhostBlockRemover extends SlimefunItem {
                 SlimefunItemStack stack = new SlimefunItemStack(
                         "GHOST_BLOCK_" + material.name().toUpperCase(),
                         material,
-                        "鬼方塊: &6" + StringUtils.capitalize(material.name().replace("_", " ").toLowerCase()),
+                        GetText.tr("Ghost Block: &6") + Translate.getMaterial(Locale.zh_tw, material),
                         "",
-                        "&7無形的方塊.");
+                        GetText.tr("&7An intangible block."));
 
                 block.getWorld().dropItemNaturally(block.getLocation(), stack);
                 block.remove();

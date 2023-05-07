@@ -10,6 +10,7 @@ import me.gallowsdove.foxymachines.listeners.SacrificialAltarListener;
 import me.gallowsdove.foxymachines.utils.QuestUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 
@@ -38,7 +39,7 @@ public class ShardMaterial extends SimpleSlimefunItem<ItemDropHandler> {
                     return;
                 }
 
-                p.sendMessage(this.color + "任務重置！");
+                p.sendMessage(this.color + GetText.tr("Quest reset!"));
                 QuestUtils.resetQuestLine(p);
                 SacrificialAltarListener.particleAnimation(item.getLocation());
 

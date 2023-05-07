@@ -14,6 +14,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 public class PositionSelectorListener implements Listener {
     @EventHandler
@@ -26,7 +27,7 @@ public class PositionSelectorListener implements Listener {
                 Block block = e.getClickedBlock();
                 SimpleLocation loc = new SimpleLocation(block, "primary_position");
                 loc.storePersistently(player.getPersistentDataContainer());
-                player.sendMessage(ChatColor.LIGHT_PURPLE + "主要位置設定在 " + loc);
+                player.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Primary position set to ") + loc);
             }
         }
     }

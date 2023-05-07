@@ -7,13 +7,14 @@ import me.gallowsdove.foxymachines.utils.QuestUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.List;
 
 public class QuestCommand extends SubCommand {
     public QuestCommand() {
-        super("quest", "Prints your current quest.", "foxymachines.info");
+        super("quest", GetText.tr("Prints your current quest."), "foxymachines.info");
     }
 
     @Override
@@ -23,7 +24,7 @@ public class QuestCommand extends SubCommand {
         }
 
         if (args.length != 0) {
-            commandSender.sendMessage(ChatColor.LIGHT_PURPLE + "Usage: /foxy quest");
+            commandSender.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Usage: /foxy quest"));
             return;
         }
 
@@ -32,8 +33,8 @@ public class QuestCommand extends SubCommand {
         } else if (SlimefunUtils.isItemSimilar(p.getInventory().getItemInMainHand(), Items.CELESTIAL_SWORD, false, false)) {
             QuestUtils.sendQuestLine(p, Items.CELESTIAL_SWORD);
         } else {
-            p.sendMessage(ChatColor.LIGHT_PURPLE + "你必須拿著 " + ChatColor.RED + "詛咒之劍" +
-                    ChatColor.LIGHT_PURPLE + " 或者 " + ChatColor.YELLOW + "天劍" + ChatColor.LIGHT_PURPLE + " 來檢查你的任務.");
+            p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("You need to be holding the ") + ChatColor.RED + GetText.tr("Cursed Sword") +
+                    ChatColor.LIGHT_PURPLE + GetText.tr(" or the ") + ChatColor.YELLOW + GetText.tr("Celestial Sword") + ChatColor.LIGHT_PURPLE + GetText.tr(" to view your quest."));
         }
     }
 

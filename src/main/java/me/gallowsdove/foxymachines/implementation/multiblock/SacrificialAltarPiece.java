@@ -11,6 +11,7 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -38,7 +39,7 @@ public class SacrificialAltarPiece extends SlimefunItem {
                     if (BlockStorage.getLocationInfo(b.getLocation(), "complete") != null &&
                             BlockStorage.getLocationInfo(b.getLocation(), "complete").equals("true")) {
                         BlockStorage.addBlockInfo(b, "complete", "false");
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭壇的一部份已被破壞, 請修復並重新啟動!");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Part of the altar has been broken, please repair it and reactivate it!"));
                     }
                 }
 

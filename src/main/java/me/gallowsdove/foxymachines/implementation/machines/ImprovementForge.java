@@ -29,6 +29,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -62,7 +63,7 @@ public class ImprovementForge extends SlimefunItem implements EnergyNetComponent
         });
 
 
-        new BlockMenuPreset(getId(), "&6改進鍛造機") {
+        new BlockMenuPreset(getId(), GetText.tr("&6Improvement Forge")) {
 
             @Override
             public void init() {

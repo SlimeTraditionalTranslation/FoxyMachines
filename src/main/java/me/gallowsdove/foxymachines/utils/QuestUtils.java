@@ -14,6 +14,7 @@ import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
@@ -28,30 +29,30 @@ public class QuestUtils {
 
     private static final List<EntityType> QUEST_MOBS = new ArrayList<>();
     private static final List<Line> CURSED_LINES = List.of(
-            new Line("我很想殺死一隻「", "」，它多麼的好吃！"),
-            new Line("給我一隻「", "」，現在！"),
-            new Line("你當然可以幫我殺一隻「", "」。"),
-            new Line("我想要鮮血....「", "」的鮮血。"),
-            new Line("我要一隻「", "」的肝臟。"),
-            new Line("我有聽說過「", "」的鮮血多麼的美味..."),
-            new Line("「", "」心臟，hmmm..."),
-            new Line("我會殺死上帝自己的「", "」肉。"),
-            new Line("我可能會吞食「", "」一整天。"),
-            new Line("我已經等待太久。太久時間或一天來殺死一隻「", "」。"),
-            new Line("「", "」的鮮血將要噴灑"),
-            new Line("我的詛咒將會吞噬「", "」的靈魂"));
+            new Line(GetText.tr("I would love to kill a "), GetText.tr(", so tasty!")),
+            new Line(GetText.tr("Give me a "), GetText.tr(", now!")),
+            new Line(GetText.tr("Surely you can help me slay a "), GetText.tr(".")),
+            new Line(GetText.tr("I want blood....  "), GetText.tr(" blood.")),
+            new Line(GetText.tr("I need a "), GetText.tr(" liver.")),
+            new Line(GetText.tr("I've heard that "), GetText.tr(" blood is tasty...")),
+            new Line("", GetText.tr(" heart, hmmm...")),
+            new Line(GetText.tr("I would slay God himself for some "), GetText.tr(" flesh.")),
+            new Line(GetText.tr("I could be devouring a "), GetText.tr(" whole day.")),
+            new Line(GetText.tr("I've been waiting for too long. Too long or a day to kill a "), GetText.tr(".")),
+            new Line("", GetText.tr("'s blood shall be spilled")),
+            new Line(GetText.tr("My curse shall devour "), GetText.tr("'s soul")));
     private static final List<Line> CELESTIAL_LINES = List.of(
-            new Line("我愛所有人... 除了「", "」，我憎恨那些."),
-            new Line("眾生必須平等，這就是為什麼我需要殺死一隻「", "」。"),
-            new Line("我是天上，但我也是一把劍。現在給我一隻「", "」。"),
-            new Line("我很抱歉，但請給我一些「", "」。不許問任何問題。"),
-            new Line("天劍需要天祭。一隻「", "」。"),
-            new Line("我下一個受害者應該是「", "」，就像是神所打算的。"),
-            new Line("接下來是 ...「", "」！"),
-            new Line("上帝要「", "」死亡。"),
-            new Line("為了上帝和榮譽，請殺死「", "」。"),
-            new Line("去，拿到那隻「", "」！為了正義！"),
-            new Line("星星已對齊。我可以清楚的看到「", "」會被我的刀刃殺死"));
+            new Line(GetText.tr("I love all beings... except "), GetText.tr(", I hate those.")),
+            new Line(GetText.tr("All life must be in balance, what's why I need to kill a "), GetText.tr(".")),
+            new Line(GetText.tr("I am celestial, but I am also a sword. Now get me a "), GetText.tr(".")),
+            new Line(GetText.tr("I'm sorry, but please get me some "), GetText.tr(". No questions.")),
+            new Line(GetText.tr("Celestial sword requires a celestial sacrifice. A "), GetText.tr(".")),
+            new Line(GetText.tr("My next victim should be "), GetText.tr(", just as God intended.")),
+            new Line(GetText.tr("And the next in line is ... "), GetText.tr("!")),
+            new Line(GetText.tr("The God wants a "), GetText.tr(" dead.")),
+            new Line(GetText.tr("For God and honour, go slay a "), GetText.tr(".")),
+            new Line(GetText.tr("Go, get that "), GetText.tr("! For justice!")),
+            new Line(GetText.tr("The stars have aligned. I can clearly see the "), GetText.tr(" that shall die by my blade")));
 
 
     public static void init() {
@@ -63,7 +64,7 @@ public class QuestUtils {
             try {
                 QuestUtils.QUEST_MOBS.add(EntityType.valueOf(questMob));
             } catch (IllegalArgumentException ignored) {
-                FoxyMachines.log(Level.WARNING, "在「quest-mobs」中有無效的實體累行：" + questMob);
+                FoxyMachines.log(Level.WARNING, GetText.tr("Invalid Entity Type in \"quest-mobs\": ") + questMob);
             }
         }
     }
@@ -107,11 +108,11 @@ public class QuestUtils {
         if (item == Items.CURSED_SWORD) {
             int i = random.nextInt(CURSED_LINES.size());
             Line line = CURSED_LINES.get(i);
-            p.sendMessage(ChatColor.RED + line.firstHalf() + toString(p, id) + line.secondHalf());
+            p.sendMessage(ChatColor.RED + line.firstHalf() + "「" + toString(p, id) + "」" + line.secondHalf());
         } else if (item == Items.CELESTIAL_SWORD) {
             int i = random.nextInt(CELESTIAL_LINES.size());
             Line line = CELESTIAL_LINES.get(i);
-            p.sendMessage(ChatColor.YELLOW + line.firstHalf() + toString(p, id) + line.secondHalf());
+            p.sendMessage(ChatColor.YELLOW + line.firstHalf() + "「" + toString(p, id) + "」" + line.secondHalf());
         }
     }
 
@@ -137,7 +138,7 @@ public class QuestUtils {
             id = nextQuestLine(p);
         }
 
-        return Translate.getEntity(p, QUEST_MOBS.get(id));
+        return Translate.getEntity(Locale.zh_tw, QUEST_MOBS.get(id));
     }
 }
 

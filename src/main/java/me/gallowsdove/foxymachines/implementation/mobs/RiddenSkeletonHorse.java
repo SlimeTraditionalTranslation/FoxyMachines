@@ -12,6 +12,7 @@ import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.List;
@@ -22,7 +23,7 @@ public class RiddenSkeletonHorse extends CustomMob {
             DamageCause.CRAMMING, DamageCause.POISON, DamageCause.BLOCK_EXPLOSION, DamageCause.ENTITY_EXPLOSION});
 
     public RiddenSkeletonHorse() {
-        super("SKELETON_HORSE", "骷髏馬", EntityType.SKELETON_HORSE, 132);
+        super("SKELETON_HORSE", GetText.tr("Skeleton Horse"), EntityType.SKELETON_HORSE, 132);
     }
 
     @Override

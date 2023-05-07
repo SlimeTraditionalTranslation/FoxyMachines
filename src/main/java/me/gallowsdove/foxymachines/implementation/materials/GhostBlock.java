@@ -18,6 +18,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.util.Vector;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.Set;
@@ -71,7 +72,7 @@ public class GhostBlock extends SlimefunItem {
 
                         item.setAmount(item.getAmount() - 1);
                     } else {
-                        p.sendMessage(ChatColor.LIGHT_PURPLE + "你沒有權限放置在這裡!");
+                        p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("You don't have permission to place this here!"));
                     }
                 }
             }

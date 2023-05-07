@@ -1,5 +1,7 @@
 package me.gallowsdove.foxymachines.abstracts;
 
+import de.unpixelt.locale.Locale;
+import de.unpixelt.locale.Translate;
 import io.github.thebusybiscuit.slimefun4.api.MinecraftVersion;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -18,6 +20,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.Arrays;
@@ -74,10 +77,10 @@ public abstract class AbstractWand extends SlimefunItem implements NotPlaceable,
 
                     if ((material.isBlock() && material.isSolid() && material.isOccluding() && !AbstractWand.BLACKLISTED.contains(material)) ||
                     AbstractWand.WHITELISTED.contains(material)) {
-                        player.sendMessage(ChatColor.LIGHT_PURPLE + "材料設定至: " + material);
+                        player.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Material set to: ") + Translate.getMaterial(Locale.zh_tw, material));
                         container.set(AbstractWand.MATERIAL_KEY, PersistentDataType.STRING, material.toString());
                         List<String> lore = this.getItem().getItemMeta().getLore();
-                        lore.set(lore.size() - 2, ChatColor.GRAY + "材料: " + ChatColor.YELLOW + material);
+                        lore.set(lore.size() - 2, ChatColor.GRAY + GetText.tr("Material: ") + ChatColor.YELLOW + Translate.getMaterial(Locale.zh_tw, material));
                         meta.setLore(lore);
                         itemInInventory.setItemMeta(meta);
                         setItemCharge(itemInInventory, getItemCharge(itemInInventory)); // To update it in lore
@@ -96,7 +99,7 @@ public abstract class AbstractWand extends SlimefunItem implements NotPlaceable,
 
                 Inventory inventory = player.getInventory();
                 if (!container.has(MATERIAL_KEY, PersistentDataType.STRING)) {
-                    player.sendMessage(ChatColor.RED + "使用 Shift + 右鍵 來選擇建築材料!");
+                    player.sendMessage(ChatColor.RED + GetText.tr("Select a building material with Shift + Right Click!"));
                     return;
                 }
                 Material material = Material.getMaterial(container.get(MATERIAL_KEY, PersistentDataType.STRING));
@@ -110,12 +113,12 @@ public abstract class AbstractWand extends SlimefunItem implements NotPlaceable,
                             Bukkit.getScheduler().runTask(FoxyMachines.getInstance(), () -> loc.getBlock().setType(material));
                         }
                     } else {
-                        player.sendMessage(ChatColor.RED + "你沒有法杖沒有足夠的能量來做這件事!");
-                        player.sendMessage(ChatColor.RED + "需要能量: " + getCostPerBBlock() * locs.size());
+                        player.sendMessage(ChatColor.RED + GetText.tr("Your item doesn't have enough energy for that!"));
+                        player.sendMessage(ChatColor.RED + GetText.tr("Energy needed: ") + getCostPerBBlock() * locs.size());
                     }
                 } else {
-                    player.sendMessage(ChatColor.RED + "你的背包內沒有足夠的材料!");
-                    player.sendMessage(ChatColor.RED + "目前的物品數量: " + Utils.countItemInInventory(inventory, blocks) + " 需要的物品數量: " + locs.size());
+                    player.sendMessage(ChatColor.RED + GetText.tr("There aren't enough materials in your inventory!"));
+                    player.sendMessage(ChatColor.RED + GetText.tr("Current items: ") + Utils.countItemInInventory(inventory, blocks) + GetText.tr(" Needed: ") + locs.size());
                 }
             }
         };

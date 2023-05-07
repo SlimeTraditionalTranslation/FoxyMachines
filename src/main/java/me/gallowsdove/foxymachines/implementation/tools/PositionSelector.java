@@ -13,6 +13,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 
@@ -46,7 +47,7 @@ public class PositionSelector extends SlimefunItem implements NotPlaceable, Rech
 
                 SimpleLocation loc = new SimpleLocation(block, "secondary_position");
                 loc.storePersistently(player.getPersistentDataContainer());
-                player.sendMessage(ChatColor.LIGHT_PURPLE + "次要位置設定在 " + loc);
+                player.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Secondary position set to ") + loc);
             }
         };
     }

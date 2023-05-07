@@ -19,6 +19,7 @@ import org.bukkit.event.entity.EntityTargetEvent;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.Collection;
@@ -36,7 +37,7 @@ public class PixieQueen extends CustomBoss {
     private static final NamespacedKey PATTERN_KEY = new NamespacedKey(FoxyMachines.getInstance(), "pattern");
 
     public PixieQueen() {
-        super("PIXIE_QUEEN", ChatColor.GREEN + "精靈女王", EntityType.VEX, 800,
+        super("PIXIE_QUEEN", ChatColor.GREEN + GetText.tr("Pixie Queen"), EntityType.VEX, 800,
                 DamageCause.BLOCK_EXPLOSION, DamageCause.ENTITY_EXPLOSION, DamageCause.THORNS);
     }
 
@@ -53,7 +54,7 @@ public class PixieQueen extends CustomBoss {
     @Nonnull
     @Override
     protected BossBarStyle getBossBarStyle() {
-        return new BossBarStyle("精靈女王", BarColor.GREEN, BarStyle.SOLID, BarFlag.PLAY_BOSS_MUSIC);
+        return new BossBarStyle(GetText.tr("Pixie Queen"), BarColor.GREEN, BarStyle.SOLID, BarFlag.PLAY_BOSS_MUSIC);
     }
 
     @Override

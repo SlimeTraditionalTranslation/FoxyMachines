@@ -7,10 +7,11 @@ import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.mini2Dx.gettext.GetText;
 
 public class FoxyRecipeType {
-    private static final CustomItemStack QUEST_ITEM = new CustomItemStack(new CustomItemStack(Material.MOJANG_BANNER_PATTERN, "&6任務獎勵", "", "&e&o通過劍來完成此任務.",
-            "&e&o使用 &c/foxy quest &e&o來查看你當前的任務."));
+    private static final CustomItemStack QUEST_ITEM = new CustomItemStack(new CustomItemStack(Material.MOJANG_BANNER_PATTERN, GetText.tr("&6Quest Reward"), "", GetText.tr("&e&oGet this by completing the quest with the sword."),
+            GetText.tr("&e&oUse &c/foxy quest &e&oto view your current quest.")));
     static {
         ItemMeta meta = QUEST_ITEM.getItemMeta();
         meta.addItemFlags(ItemFlag.HIDE_POTION_EFFECTS);
@@ -18,11 +19,11 @@ public class FoxyRecipeType {
     }
 
     public static RecipeType SACRIFICIAL_ALTAR = new RecipeType(new NamespacedKey(FoxyMachines.getInstance(), "sacrificial_altar"),
-            new CustomItemStack(Material.POLISHED_BLACKSTONE_BRICKS, "&c獻祭祭壇", "", "&e&o獻祭怪物在獻祭祭壇中",
-                    "&e&o使用 &c/foxy altar &e&o來查看多重方塊的蓋法."));
+            new CustomItemStack(Material.POLISHED_BLACKSTONE_BRICKS, GetText.tr("&cSacrificial Altar"), "", GetText.tr("&e&oSacrifice the mob in the Sacrificial Altar"),
+                    GetText.tr("&e&oUse &c/foxy altar &e&oto view the multiblock.")));
     public static RecipeType FISHING = new RecipeType(new NamespacedKey(FoxyMachines.getInstance(), "fishing"),
-            new CustomItemStack(Material.FISHING_ROD, "&b釣魚", "", "&e&o通過釣魚獲得."));
+            new CustomItemStack(Material.FISHING_ROD, GetText.tr("&bFishing"), "", GetText.tr("&e&oGet this as a fishing loot.")));
     public static RecipeType QUEST = new RecipeType(new NamespacedKey(FoxyMachines.getInstance(), "quest"), QUEST_ITEM);
     public static RecipeType CUSTOM_MOB_DROP = new RecipeType(new NamespacedKey(FoxyMachines.getInstance(), "mob_drop"),
-            new CustomItemStack(Material.DIAMOND_SWORD, "&a獨特怪物掉落", "", "&e&o通過殺死指定怪物獲得."));
+            new CustomItemStack(Material.DIAMOND_SWORD, GetText.tr("&aUnique Mob Drop"), "", GetText.tr("&e&oObtained by killing the specified mob.")));
 }

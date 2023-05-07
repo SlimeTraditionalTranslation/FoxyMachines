@@ -35,6 +35,7 @@ import org.bukkit.potion.PotionData;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.potion.PotionType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -59,7 +60,7 @@ public class PotionMixer extends SlimefunItem implements EnergyNetComponent {
         });
 
 
-        new BlockMenuPreset(getId(), "&6藥水混合器") {
+        new BlockMenuPreset(getId(), GetText.tr("&6Potion Mixer")) {
 
             @Override
             public void init() {
@@ -392,17 +393,17 @@ public class PotionMixer extends SlimefunItem implements EnergyNetComponent {
                 }
 
                 List<String> lore = new ArrayList<>() {{
-                    add("無法在釀造台上使用");
+                    add(GetText.tr("Not usable in Brewing Stand"));
                 }};
                 potionMeta.setBasePotionData(new PotionData(PotionType.UNCRAFTABLE, false, false));
                 switch (potion1.getType()) {
-                    case POTION -> potionMeta.setDisplayName(ChatColor.AQUA + "混和藥水");
+                    case POTION -> potionMeta.setDisplayName(ChatColor.AQUA + GetText.tr("Combined Potion"));
                     case LINGERING_POTION -> {
-                        lore.add(ChatColor.RED + "由於 Minecraft 顯示的時間不正確");
-                        lore.add(ChatColor.RED + "錯誤,將其乘以 4 得到真實時間.");
-                        potionMeta.setDisplayName(ChatColor.AQUA + "混和滯留藥水");
+                        lore.add(ChatColor.RED + GetText.tr("The time shown is incorrect due to a Minecraft"));
+                        lore.add(ChatColor.RED + GetText.tr("bug, multiply it by 4 to get the real time."));
+                        potionMeta.setDisplayName(ChatColor.AQUA + GetText.tr("Combined Lingering Potion"));
                     }
-                    case SPLASH_POTION -> potionMeta.setDisplayName(ChatColor.AQUA + "混和飛濺藥水");
+                    case SPLASH_POTION -> potionMeta.setDisplayName(ChatColor.AQUA + GetText.tr("Combined Splash Potion"));
                 }
                 potionMeta.setLore(lore);
                 potionMeta.setColor(Color.AQUA);

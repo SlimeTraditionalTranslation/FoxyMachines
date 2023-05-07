@@ -17,6 +17,7 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataContainer;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
@@ -48,7 +49,7 @@ public class FillWand extends AbstractWand {
         SimpleLocation loc2 = SimpleLocation.fromPersistentStorage(container, "secondary_position");
 
         if (loc1 == null || loc2 == null || !loc1.getWorldUUID().equals(loc2.getWorldUUID())) {
-            player.sendMessage(ChatColor.RED + "請使用位置選擇器選擇兩個角落點位置!");
+            player.sendMessage(ChatColor.RED + GetText.tr("Please select both locations using Position Selector!"));
             return locs;
         }
 
@@ -72,14 +73,14 @@ public class FillWand extends AbstractWand {
 
         int max = new Config(FoxyMachines.getInstance()).getInt("max-fill-wand-blocks");
         if ((loc1.getX() - loc2.getX()) * (loc1.getY() - loc2.getY()) * (loc1.getZ() - loc2.getZ()) > max) {
-            player.sendMessage(ChatColor.RED + "所選的區域過大!");
+            player.sendMessage(ChatColor.RED + GetText.tr("Selected area is too big!"));
             return locs;
         }
 
         World world = Bukkit.getWorld(UUID.fromString(loc1.getWorldUUID()));
 
         if (world == null) {
-            player.sendMessage(ChatColor.RED + "請使用位置選擇器選擇兩個角落點位置!");
+            player.sendMessage(ChatColor.RED + GetText.tr("Please select both locations using Position Selector!"));
             return locs;
         }
 
@@ -94,7 +95,7 @@ public class FillWand extends AbstractWand {
             }
         }
         if (locs.isEmpty()) {
-            player.sendMessage(ChatColor.RED + "所給的選定點並未找到有效的位置!");
+            player.sendMessage(ChatColor.RED + GetText.tr("No valid locations found given the selected points!"));
         }
 
         return locs;

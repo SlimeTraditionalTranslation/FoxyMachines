@@ -4,13 +4,14 @@ import io.github.mooy1.infinitylib.commands.SubCommand;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.List;
 
 public class SacrificialAltarCommand extends SubCommand {
     public SacrificialAltarCommand() {
-        super("altar", "Gives you a link to the Sacrificial Altar", "foxymachines.info");
+        super("altar", GetText.tr("Gives you a link to the Sacrificial Altar"), "foxymachines.info");
     }
 
     @Override

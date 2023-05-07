@@ -16,6 +16,7 @@ import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.UUID;
@@ -53,9 +54,9 @@ public class RemoteController extends SlimefunItem implements NotPlaceable, Rech
 
                         loc.storePersistently(container);
                         itemInInventory.setItemMeta(meta);
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "已將穹頂力場綁定至遙控裝置.");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Forcefield dome is now bound to the remote controller."));
                     } else {
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你必須將此綁定至穹頂力場方塊.");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("You must bind this to a Forcefield Dome block."));
                     }
                 }
             } else {
@@ -70,13 +71,13 @@ public class RemoteController extends SlimefunItem implements NotPlaceable, Rech
                         if (removeItemCharge(item, COST)) {
                             ForcefieldDome.INSTANCE.switchActive(b, e.getPlayer());
                         } else {
-                            e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "請先為遙控裝置充電.");
+                            e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Charge your remote controller first."));
                         }
                     } else {
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "找不到屬於此遙控裝置的穹頂.");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Forcefield belonging to this remote control wasn't found."));
                     }
                 } else {
-                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "將此物品用 Shift + 右鍵綁定!");
+                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Bind this item with Shift + Right Click first!"));
                 }
             }
         };

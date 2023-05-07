@@ -17,6 +17,7 @@ import org.bukkit.event.block.*;
 import org.bukkit.event.entity.EntityChangeBlockEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.UUID;
@@ -100,7 +101,7 @@ public class ForcefieldListener implements Listener {
                     int zdif = (int) (l.getZ() - loc.getZ());
                     if (Math.floor(Math.sqrt((xdif * xdif) + (ydif * ydif) + (zdif * zdif))) <= 32) {
                         e.setCancelled(true);
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你無法傳送到穹頂!");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("You can't teleport to a dome!"));
                         break;
                     }
                 }

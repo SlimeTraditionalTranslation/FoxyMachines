@@ -17,9 +17,15 @@ import me.gallowsdove.foxymachines.tasks.GhostBlockTask;
 import me.gallowsdove.foxymachines.tasks.MobTicker;
 import me.gallowsdove.foxymachines.tasks.QuestTicker;
 import me.gallowsdove.foxymachines.utils.QuestUtils;
+import org.antlr.v4.runtime.misc.ParseCancellationException;
+import org.mini2Dx.gettext.GetText;
+import org.mini2Dx.gettext.PoFile;
 
 import javax.annotation.Nonnull;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Locale;
 
 public class FoxyMachines extends AbstractAddon {
     private static FoxyMachines instance;
@@ -34,6 +40,24 @@ public class FoxyMachines extends AbstractAddon {
     @SneakyThrows
     public void enable() {
         instance = this;
+
+        GetText.setLocale(Locale.TRADITIONAL_CHINESE);
+        InputStream inputStream = getClass().getResourceAsStream("/translations/zh_tw.po");
+        if (inputStream == null) {
+            getLogger().severe("錯誤！無法找到翻譯檔案，請回報給翻譯者。");
+            getServer().getPluginManager().disablePlugin(this);
+            return;
+        } else {
+            getLogger().info("載入繁體翻譯檔案...");
+            try {
+                PoFile poFile = new PoFile(Locale.TRADITIONAL_CHINESE, inputStream);
+                GetText.add(poFile);
+            } catch (ParseCancellationException | IOException e) {
+                getLogger().severe("錯誤！讀取翻譯時發生錯誤，請回報給翻譯者：" + e.getMessage());
+                getServer().getPluginManager().disablePlugin(this);
+                return;
+            }
+        }
 
         Events.registerListener(new ChunkLoaderListener());
         Events.registerListener(new BoostedRailListener());

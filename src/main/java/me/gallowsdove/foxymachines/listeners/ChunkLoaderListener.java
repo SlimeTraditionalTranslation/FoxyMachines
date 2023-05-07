@@ -16,6 +16,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 
@@ -36,7 +37,7 @@ public class ChunkLoaderListener implements Listener {
         Block b = e.getBlockPlaced();
         if (b.getChunk().isForceLoaded()) {
             e.setCancelled(true);
-            p.sendMessage(ChatColor.LIGHT_PURPLE + "此區塊已經加載!");
+            p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("This chunk is already loaded!"));
             return;
         }
 
@@ -47,7 +48,7 @@ public class ChunkLoaderListener implements Listener {
         if (!p.hasPermission("foxymachines.bypass-chunk-loader-limit")) {
             int max = cfg.getInt("max-chunk-loaders");
             if(max != 0 && max < i) {
-                p.sendMessage(ChatColor.LIGHT_PURPLE + "已放置最大區塊加載器數量: " + max);
+                p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Maximum amount of chunk loaders already placed: ") + max);
                 e.setCancelled(true);
                 return;
             }
@@ -55,7 +56,7 @@ public class ChunkLoaderListener implements Listener {
         int currentComplexity = Slimefun.getGPSNetwork().getNetworkComplexity(p.getUniqueId());
         int requiredComplexity = cfg.getInt("gps-complexity-per-loader") * i;
         if (currentComplexity < requiredComplexity) {
-            p.sendMessage(ChatColor.LIGHT_PURPLE + "目前你的 GPS 訊號強度是 " + currentComplexity + "/" + requiredComplexity + ",  你需要提高 GPS 訊號強度才能放置另一個區塊加載器.");
+            p.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("You have ") + currentComplexity + "/" + requiredComplexity + GetText.tr(" GPS Network Complexity required to place another Chunk Loader."));
             e.setCancelled(true);
             return;
         }

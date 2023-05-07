@@ -5,6 +5,7 @@ import me.gallowsdove.foxymachines.abstracts.CustomMob;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 public final class SummonCommand extends SubCommand {
 
     public SummonCommand() {
-        super("summon", "Summons a custom mob", "foxymachines.admin");
+        super("summon", GetText.tr("Summons a custom mob"), "foxymachines.admin");
     }
 
     @Override
@@ -22,7 +23,7 @@ public final class SummonCommand extends SubCommand {
         }
 
         if (args.length != 1) {
-            commandSender.sendMessage(ChatColor.LIGHT_PURPLE + "Usage: /foxy summon <MOB_ID>");
+            commandSender.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Usage: /foxy summon <MOB_ID>"));
             return;
         }
 

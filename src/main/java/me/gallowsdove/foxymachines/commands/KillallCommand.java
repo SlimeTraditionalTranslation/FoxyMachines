@@ -7,13 +7,14 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.List;
 
 public class KillallCommand extends SubCommand {
     public KillallCommand() {
-        super("killall", "Kills all Custom Mobs from FoxyMachines.", "foxymachines.admin");
+        super("killall", GetText.tr("Kills all Custom Mobs from FoxyMachines."), "foxymachines.admin");
     }
 
     @Override
@@ -23,7 +24,7 @@ public class KillallCommand extends SubCommand {
         }
 
         if (args.length != 0) {
-            commandSender.sendMessage(ChatColor.LIGHT_PURPLE + "Usage: /foxy killall");
+            commandSender.sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Usage: /foxy killall"));
             return;
         }
 

@@ -14,6 +14,7 @@ import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.List;
@@ -40,10 +41,10 @@ public class SacrificialAltarPressurePlate extends SlimefunItem {
                 Block b = e.getBlockPlaced();
                 if (isComplete(b)) {
                     BlockStorage.addBlockInfo(b, "complete", "true");
-                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭壇已啟動.");
+                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("The Sacrificial Altar has been activated."));
                 } else {
                     BlockStorage.addBlockInfo(b, "complete", "false");
-                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "完成你的祭壇, 點擊此方塊一次來啟動它.");
+                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("Finish your Altar and click this block again to activate it."));
                 }
             }
         };
@@ -55,10 +56,10 @@ public class SacrificialAltarPressurePlate extends SlimefunItem {
             if (BlockStorage.getLocationInfo(b.getLocation(), "complete").equals("false")) {
                 if (isComplete(b)) {
                     BlockStorage.addBlockInfo(b, "complete", "true");
-                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭壇已啟動.");
+                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("The Sacrificial Altar has been activated."));
                 } else {
                     BlockStorage.addBlockInfo(b, "complete", "false");
-                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭壇還沒有完成!");
+                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("The Altar is not finished!"));
                 }
             }
 
@@ -72,7 +73,7 @@ public class SacrificialAltarPressurePlate extends SlimefunItem {
             public void onPlayerBreak(@Nonnull BlockBreakEvent e, @Nonnull ItemStack item, @Nonnull List<ItemStack> drops) {
                 BlockStorage.addBlockInfo(e.getBlock(), "complete", null);
                 BlockStorage.clearBlockInfo(e.getBlock());
-                e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭壇已被破壞!");
+                e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + GetText.tr("The Altar has been broken!"));
             }
         };
     }

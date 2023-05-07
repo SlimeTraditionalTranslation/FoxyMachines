@@ -11,6 +11,7 @@ import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.EntityTargetEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.Collection;
@@ -18,7 +19,7 @@ import java.util.Collection;
 public class Helldog extends CustomMob {
 
     public Helldog() {
-        super("HELLDOG", "地獄犬", EntityType.WOLF, 30);
+        super("HELLDOG", GetText.tr("Helldog"), EntityType.WOLF, 30);
     }
 
     @Override

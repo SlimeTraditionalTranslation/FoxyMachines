@@ -1,0 +1,1355 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-07 11:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:30
+msgid "&4Foxy Machines"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:36
+msgid "&bMaterials"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:42
+msgid "&aMachines"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:48
+msgid "&eTools"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:54
+msgid "&aWeapons and Armors"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:60
+msgid "&4Sacrificial Altar"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:66
+msgid "&cBosses"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:72
+msgid "&5Ghost Blocks"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:79
+msgid "&bElectric Wind Staff"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:81
+msgid "&7Ride on the wind."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:96
+msgid "&4Electric Fire Staff"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:98
+msgid "&7Create inferno."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:112
+msgid "&4Electric Fire Staff &7- &eII"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:114
+msgid "&7Fire, fire, fire!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:128
+msgid "&4Healing Bow"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:129
+msgid "&cHealing II"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:131
+msgid "&8Finally a support weapon."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:137
+msgid "&bReinforced String"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:143
+msgid "&bImprovement Forge"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:145
+msgid "&7Used to improve Slimefun tools, weapons and armor."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:154
+msgid "&aImprovement Core"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:156
+msgid "&7Combine it with a tool in Improvement Forge to improve it."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:162
+msgid "&bPotion Mixer"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:164
+msgid "&7Used to mix potions."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:173
+msgid "&bElectric Gold Refinery"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:175
+msgid "&7Refines gold dust to gold ingots."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:184
+msgid "&bChunk Loader"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:186
+msgid "&7Keeps chunk loaded."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:192
+msgid "&bStabilized Blistering Block"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:194
+msgid "&7A stable material."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:200
+msgid "&fBoosted Rail"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:202
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:210
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:218
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:226
+msgid "&7Supports 2.5x the speed."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:208
+msgid "&fBoosted Activator Rail"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:216
+msgid "&fBoosted Detector Rail"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:224
+msgid "&fBoosted Powered Rail"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:232
+msgid "&eSweet Berry Bush Trimmer"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:234
+msgid "&7Removes thorns from sweet berry bushes."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:240
+msgid "&4Forcefield Dome"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:242
+msgid "&7When powered, creates a protective barrier"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:243
+msgid "&7with a 32-block radius."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:244
+msgid "&7Will revert once unpowered or broken"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:252
+msgid "&cRemote Controller"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:254
+msgid "&7Allows you to control your Forcefield Dome from distance-"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:255
+msgid "&7Bind it using Shift + Right Click."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:263
+msgid "&fForcefield Engine"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:269
+msgid "&fForcefield Stabilizer"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:275
+msgid "&fWireless Transmitter"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:281
+msgid "&cDemonic Ingot"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:287
+msgid "&cDemonic Plate"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:293
+msgid "&bAquatic Netherite Ingot"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:299
+msgid "&aDamienium"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:305
+msgid "&eSweet Ingot"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:311
+msgid "&eSweetened Sweet Ingot"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:317
+msgid "&fSacrificial Blackstone Bricks"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:319
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:327
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:335
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:343
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:351
+msgid "&7Used as a part of Sacrificial Altar."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:325
+msgid "&fSacrificial Blackstone Brick Wall"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:333
+msgid "&fSacrificial Blackstone Brick Stairs"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:341
+msgid "&fSacrificial Soul Torch"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:349
+msgid "&fSacrificial Mat"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:357
+msgid "&cCursed Rabbit Paw"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:363
+msgid "&cHuman Skull"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:369
+msgid "&cBlood Infused Skull"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:375
+msgid "&cBlood"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:381
+msgid "&cUnholy Wither Skeleton Bone"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:387
+msgid "&bPurified Bone"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:393
+msgid "&bPure Bone Dust"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:399
+msgid "&cBucket of Blood"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:405
+msgid "&bPoseidon's Fishing Rod"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:406
+msgid "&7Poseidon's Blessing"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:408
+msgid "&7Can catch special items."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:418
+msgid "&bPoseidon's Blessing"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:424
+msgid "&cCursed Sword"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:425
+msgid "&7Life Steal I"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:427
+msgid "&7Confuses enemies. Increases damage."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:428
+msgid "&7Can negatively affect wielder."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:434
+msgid "&eCelestial Sword"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:435
+msgid "&7Divine Smite II"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:437
+#, java-printf-format
+msgid "&7Ignores 20% of Resistances."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:443
+msgid "&bElucidator"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:444
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:651
+msgid "&7Damage III"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:445
+msgid "&7Life Steal II"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:446
+msgid "&7Overheal"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:456
+msgid "&6Magical Lump &7- &eIV"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:458
+msgid "&c&oTier: IV"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:463
+msgid "&6Magical Lump &7- &eV"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:465
+msgid "&c&oTier: V"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:470
+msgid "&bAquatic Helmet"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:471
+msgid "&7Water Breathing"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:472
+msgid "&7Darkvision"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:485
+msgid "&aResistant Chestplate"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:486
+msgid "&7Resistance I"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:487
+msgid "&7Regeneration I"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:496
+msgid "&cFiery Leggings"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:497
+msgid "&7Fire Aura II"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:507
+msgid "&eLight Boots"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:508
+msgid "&7Jump I"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:509
+msgid "&7Speed I"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:510
+msgid "&7Lightweight"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:521
+msgid "&fAquatic Helmet Frame"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:523
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:531
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:539
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:547
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:554
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:562
+msgid "&7Crafting Material"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:529
+msgid "&fResistant Chestplate Frame"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:537
+msgid "&fFiery Leggings Frame"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:545
+msgid "&fLight Boots Frame"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:553
+msgid "&cCursed Shard"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:555
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:563
+msgid "&7Will reset a Quest when thrown into an Altar..."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:561
+msgid "&eCelestial Shard"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:569
+msgid "&aEquanimous Gem"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:575
+msgid "&fPolar Fox Hide"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:581
+msgid "&cMagma Essence"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:587
+msgid "&bTropical Fish Scale"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:593
+msgid "&aParrot Feather"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:600
+msgid "&7Ancient Rune &8&l[&2&lUnbreakable&8&l]"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:602
+msgid "&eDrop this rune onto a dropped item to"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:603
+msgid "&emake it &2unbreakable"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:609
+msgid "&aPixie Queen Spawn Egg"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:615
+msgid "&cHeadless Horseman Spawn Egg"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:621
+msgid "&4Pixie Queen Heart"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:627
+msgid "&ePixie Dust"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:629
+msgid "&7Strength IV"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:635
+msgid "&cVile Pumpkin"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:641
+msgid "&cVile Seeds"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:643
+msgid "&7Health Boost V"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:649
+msgid "&eAcri Arcum"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:652
+msgid "&7Armor Piercing II"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:662
+msgid "&eGhost Block Remover"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:664
+msgid "&7Right click to remove a Ghost Block."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:670
+msgid "&ePosition Selector"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:672
+msgid "&7Left click a block to select primary position."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:673
+msgid "&7Right click a block to select secondary position."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:681
+msgid "&eFill Wand"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:683
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:696
+msgid "&7Select corner points with Position Selector."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:684
+msgid "&7Shift right click to select material."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:685
+msgid "&7Right click to fill an area."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:687
+msgid "&7Material: &eNone"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:694
+msgid "&eSponge Wand"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:697
+msgid "&7Right click to remove Water and Lava."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:705
+msgid "&aNuclear Salt"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:713
+msgid "&fCompressed Sponge"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:172
+msgid "&eMob Drop"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:177
+msgid "&eRabbit Drop"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:182
+msgid "&ePlayer Drop"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:187
+msgid "&eTropical Fish Drop"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:192
+msgid "&ePolar Fox Drop"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:197
+msgid "&eMagma Cube Drop"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:202
+msgid "&eParrot Drop"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:207
+msgid "&eWither Skeleton Drop"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:246
+msgid "&aPixie Queen"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:246
+msgid "&7Summon it using &aPixie Queen Spawn Egg"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:251
+msgid "&cHeadless Horseman"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:251
+msgid "&7Summon it using &cHeadless Horseman Spawn Egg"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:425
+msgid "&fGhost Block: &6"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:427
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/GhostBlockRemover.java:47
+msgid "&7An intangible block."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:452
+msgid "On the wind with the power of electricity"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:456
+msgid "Create inferno"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:460
+msgid "Support"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:464
+msgid "Harder, Better, Stronger"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:468
+msgid "Beyond imaginations"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:472
+msgid "Up 1"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:476
+msgid "Brewing like never before"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:480
+msgid "Get rid of the smelteries"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:484
+msgid "Quite a useful utility"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:488
+msgid "What a material"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:492
+msgid "Faster, Better, Stronger"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:496
+msgid "Stay safe!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:500
+msgid "A safe space"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:504
+msgid "From far away"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:508
+msgid "More ingots"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:512
+msgid "Sacrifice"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:518
+msgid "Profit"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:523
+msgid "Demonic plate"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:527
+msgid "On my way to Forcefield"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:531
+msgid "No more wires"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:535
+msgid "With the power of Poseidon"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:539
+msgid "Better Fishing"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:543
+msgid "Better Swords"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:547
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:551
+msgid "More Lumps, More Magic"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:555
+msgid "Bloodier"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:559
+msgid "Better Armor"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:563
+msgid "Bloody Bucket"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:567
+msgid "Balanced, as things should be"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:571
+msgid "The Ultimate Sword"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:575
+msgid "Armor Frame"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:579
+msgid "Who needs anvil?"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:584
+msgid "A worthy opponent."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:588
+msgid "Strength Boost."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:592
+msgid "Good luck"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:596
+msgid "Health Boost."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:601
+msgid "Bow."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:605
+msgid "Ghost Block Remover."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:609
+msgid "Building made easier."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:613
+msgid "Don't forget your hazmat suit."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:617
+msgid "Succ."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/abstracts/AbstractWand.java:78
+msgid "Material set to: "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/abstracts/AbstractWand.java:81
+msgid "Material: "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/abstracts/AbstractWand.java:100
+msgid "Select a building material with Shift + Right Click!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/abstracts/AbstractWand.java:114
+msgid "Your item doesn't have enough energy for that!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/abstracts/AbstractWand.java:115
+msgid "Energy needed: "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/abstracts/AbstractWand.java:118
+msgid "There aren't enough materials in your inventory!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/abstracts/AbstractWand.java:119
+msgid "Current items: "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/abstracts/AbstractWand.java:119
+msgid " Needed: "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/KillallCommand.java:17
+msgid "Kills all Custom Mobs from FoxyMachines."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/KillallCommand.java:27
+msgid "Usage: /foxy killall"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/QuestCommand.java:17
+msgid "Prints your current quest."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/QuestCommand.java:27
+msgid "Usage: /foxy quest"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/QuestCommand.java:36
+msgid "You need to be holding the "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/QuestCommand.java:36
+msgid "Cursed Sword"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/QuestCommand.java:37
+msgid " or the "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/QuestCommand.java:37
+msgid "Celestial Sword"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/QuestCommand.java:37
+msgid " to view your quest."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/SacrificialAltarCommand.java:14
+msgid "Gives you a link to the Sacrificial Altar"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/SummonCommand.java:16
+msgid "Summons a custom mob"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/commands/SummonCommand.java:26
+msgid "Usage: /foxy summon <MOB_ID>"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/consumables/UnbreakableRune.java:85
+msgid "Your item is now Unbreakable."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/consumables/UnbreakableRune.java:87
+#: src/main/java/me/gallowsdove/foxymachines/implementation/consumables/UnbreakableRune.java:91
+msgid "Your item could not be made Unbreakable"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:63
+msgid "&6Electric Gold Refinery"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:84
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:98
+msgid "&6Current Recipe: &cNONE"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:84
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:87
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:88
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:89
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:90
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:91
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:92
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:93
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:94
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:95
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:96
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:97
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:98
+msgid "&e> Choose on the left to change it"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:87
+msgid "&6Current Recipe: &fGold Ingot &7(4 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:88
+msgid "&6Current Recipe: &fGold Ingot &7(6 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:89
+msgid "&6Current Recipe: &fGold Ingot &7(8 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:90
+msgid "&6Current Recipe: &fGold Ingot &7(10 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:91
+msgid "&6Current Recipe: &fGold Ingot &7(12 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:92
+msgid "&6Current Recipe: &fGold Ingot &7(14 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:93
+msgid "&6Current Recipe: &fGold Ingot &7(16 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:94
+msgid "&6Current Recipe: &fGold Ingot &7(18 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:95
+msgid "&6Current Recipe: &fGold Ingot &7(20 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:96
+msgid "&6Current Recipe: &fGold Ingot &7(22 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:97
+msgid "&6Current Recipe: &fGold Ingot &7(24 Carat)"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ElectricGoldRefinery.java:326
+msgid "&cNONE"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ForcefieldDome.java:127
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ForcefieldDome.java:200
+msgid "The dome has been activated."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ForcefieldDome.java:133
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ForcefieldDome.java:206
+msgid "You don't have enough energy."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ForcefieldDome.java:137
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ForcefieldDome.java:210
+msgid "The dome has been deactivated."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ForcefieldDome.java:144
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ForcefieldDome.java:217
+msgid "You must wait at least 10 seconds before activating the dome again."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/ImprovementForge.java:66
+msgid "&6Improvement Forge"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/PotionMixer.java:63
+msgid "&6Potion Mixer"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/PotionMixer.java:396
+msgid "Not usable in Brewing Stand"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/PotionMixer.java:400
+msgid "Combined Potion"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/PotionMixer.java:402
+msgid "The time shown is incorrect due to a Minecraft"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/PotionMixer.java:403
+msgid "bug, multiply it by 4 to get the real time."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/PotionMixer.java:404
+msgid "Combined Lingering Potion"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/machines/PotionMixer.java:406
+msgid "Combined Splash Potion"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/materials/GhostBlock.java:75
+msgid "You don't have permission to place this here!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/materials/ShardMaterial.java:42
+msgid "Quest reset!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/mobs/HeadlessHorseman.java:43
+#: src/main/java/me/gallowsdove/foxymachines/implementation/mobs/HeadlessHorseman.java:68
+msgid "Headless Horseman"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/mobs/Helldog.java:22
+msgid "Helldog"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/mobs/Pixie.java:18
+msgid "Pixie"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/mobs/PixieQueen.java:40
+#: src/main/java/me/gallowsdove/foxymachines/implementation/mobs/PixieQueen.java:57
+msgid "Pixie Queen"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/mobs/RiddenSkeletonHorse.java:26
+msgid "Skeleton Horse"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/multiblock/SacrificialAltarPiece.java:42
+msgid "Part of the altar has been broken, please repair it and reactivate it!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/multiblock/SacrificialAltarPressurePlate.java:44
+#: src/main/java/me/gallowsdove/foxymachines/implementation/multiblock/SacrificialAltarPressurePlate.java:59
+msgid "The Sacrificial Altar has been activated."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/multiblock/SacrificialAltarPressurePlate.java:47
+msgid "Finish your Altar and click this block again to activate it."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/multiblock/SacrificialAltarPressurePlate.java:62
+msgid "The Altar is not finished!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/multiblock/SacrificialAltarPressurePlate.java:76
+msgid "The Altar has been broken!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/BerryBushTrimmer.java:70
+msgid "This berry bush is already trimmed!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/FillWand.java:52
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/FillWand.java:83
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/SpongeWand.java:49
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/SpongeWand.java:80
+msgid "Please select both locations using Position Selector!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/FillWand.java:76
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/SpongeWand.java:73
+msgid "Selected area is too big!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/FillWand.java:98
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/SpongeWand.java:96
+msgid "No valid locations found given the selected points!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/GhostBlockRemover.java:45
+msgid "Ghost Block: &6"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/PositionSelector.java:50
+msgid "Secondary position set to "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/RemoteController.java:57
+msgid "Forcefield dome is now bound to the remote controller."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/RemoteController.java:59
+msgid "You must bind this to a Forcefield Dome block."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/RemoteController.java:74
+msgid "Charge your remote controller first."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/RemoteController.java:77
+msgid "Forcefield belonging to this remote control wasn't found."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/tools/RemoteController.java:80
+msgid "Bind this item with Shift + Right Click first!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/listeners/ChunkLoaderListener.java:40
+msgid "This chunk is already loaded!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/listeners/ChunkLoaderListener.java:51
+msgid "Maximum amount of chunk loaders already placed: "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/listeners/ChunkLoaderListener.java:59
+msgid "You have "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/listeners/ChunkLoaderListener.java:59
+msgid " GPS Network Complexity required to place another Chunk Loader."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/listeners/ForcefieldListener.java:104
+msgid "You can't teleport to a dome!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/listeners/PositionSelectorListener.java:30
+msgid "Primary position set to "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/listeners/SwordListener.java:121
+msgid "The Cursed Sword is pleased."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/listeners/SwordListener.java:124
+msgid "The Celestial Sword is pleased."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/types/FoxyRecipeType.java:13
+msgid "&6Quest Reward"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/types/FoxyRecipeType.java:13
+msgid "&e&oGet this by completing the quest with the sword."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/types/FoxyRecipeType.java:14
+msgid "&e&oUse &c/foxy quest &e&oto view your current quest."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/types/FoxyRecipeType.java:22
+msgid "&cSacrificial Altar"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/types/FoxyRecipeType.java:22
+msgid "&e&oSacrifice the mob in the Sacrificial Altar"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/types/FoxyRecipeType.java:23
+msgid "&e&oUse &c/foxy altar &e&oto view the multiblock."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/types/FoxyRecipeType.java:25
+msgid "&bFishing"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/types/FoxyRecipeType.java:25
+msgid "&e&oGet this as a fishing loot."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/types/FoxyRecipeType.java:28
+msgid "&aUnique Mob Drop"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/types/FoxyRecipeType.java:28
+msgid "&e&oObtained by killing the specified mob."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:32
+msgid "I would love to kill a "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:32
+msgid ", so tasty!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:33
+msgid "Give me a "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:33
+msgid ", now!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:34
+msgid "Surely you can help me slay a "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:34
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:41
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:46
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:47
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:49
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:53
+msgid "."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:35
+msgid "I want blood....  "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:35
+msgid " blood."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:36
+msgid "I need a "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:36
+msgid " liver."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:37
+msgid "I've heard that "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:37
+msgid " blood is tasty..."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:38
+msgid " heart, hmmm..."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:39
+msgid "I would slay God himself for some "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:39
+msgid " flesh."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:40
+msgid "I could be devouring a "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:40
+msgid " whole day."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:41
+msgid "I've been waiting for too long. Too long or a day to kill a "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:42
+msgid "'s blood shall be spilled"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:43
+msgid "My curse shall devour "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:43
+msgid "'s soul"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:45
+msgid "I love all beings... except "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:45
+msgid ", I hate those."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:46
+msgid "All life must be in balance, what's why I need to kill a "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:47
+msgid "I am celestial, but I am also a sword. Now get me a "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:48
+msgid "I'm sorry, but please get me some "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:48
+msgid ". No questions."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:49
+msgid "Celestial sword requires a celestial sacrifice. A "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:50
+msgid "My next victim should be "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:50
+msgid ", just as God intended."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:51
+msgid "And the next in line is ... "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:51
+msgid "!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:52
+msgid "The God wants a "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:52
+msgid " dead."
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:53
+msgid "For God and honour, go slay a "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:54
+msgid "Go, get that "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:54
+msgid "! For justice!"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:55
+msgid "The stars have aligned. I can clearly see the "
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:55
+msgid " that shall die by my blade"
+msgstr ""
+
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:67
+msgid "Invalid Entity Type in \"quest-mobs\": "
+msgstr ""

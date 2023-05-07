@@ -53,6 +53,7 @@
                 <filtering>true</filtering>
                 <includes>
                     <include>*</include>
+                    <include>translations/*.po</include>
                 </includes>
             </resource>
         </resources>
@@ -151,6 +152,12 @@
             <groupId>com.github.SlimeTraditionalTranslation</groupId>
             <artifactId>Locale-API</artifactId>
             <version>v1.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mini2Dx</groupId>
+            <artifactId>gettext-lib</artifactId>
+            <version>1.11.0</version>
         </dependency>
     </dependencies>
 </project>

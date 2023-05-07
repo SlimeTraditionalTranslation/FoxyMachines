@@ -5,7 +5,7 @@ name: FoxyMachines
 author: GallowsDove
 
 ## CHANGE this to a meaninful but short description of your plugin.
-description: 黏液科技附加 Foxy機器 繁體翻譯版.
+description: 黏液科技附加「Foxy 機器」繁體中文版。
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
 main: me.gallowsdove.foxymachines.FoxyMachines
