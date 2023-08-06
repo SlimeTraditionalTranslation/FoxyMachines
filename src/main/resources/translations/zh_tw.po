@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slimetranslations\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-29 12:25+0000\n"
-"PO-Revision-Date: 2023-06-29 14:12\n"
+"POT-Creation-Date: 2023-08-06 07:33+0000\n"
+"PO-Revision-Date: 2023-08-07 18:38\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
@@ -316,33 +316,36 @@ msgstr "&c詛咒之劍"
 msgid "&7Life Steal I"
 msgstr "&7生命吸取 I"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:427
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:426
+msgid "&7Armor Penetration I"
+msgstr "&7護甲穿透 I"
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:428
 msgid "&7Confuses enemies. Increases damage."
 msgstr "&7困惑敵人。增加傷害。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:428
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:429
 msgid "&7Can negatively affect wielder."
 msgstr "&7同時也會對持有者造成負面影響。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:434
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:435
 msgid "&eCelestial Sword"
 msgstr "&e天界之劍"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:435
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:436
 msgid "&7Divine Smite II"
 msgstr "&7神聖制裁 II"
 
 #: src/main/java/me/gallowsdove/foxymachines/Items.java:437
-#, java-printf-format
-msgid "&7Ignores 20% of Resistances."
-msgstr "&7忽略 20% 的抗性。"
+msgid "&7Armor Penetration V"
+msgstr "&7護甲穿透 V"
 
 #: src/main/java/me/gallowsdove/foxymachines/Items.java:443
 msgid "&bElucidator"
 msgstr "&b闡釋者"
 
 #: src/main/java/me/gallowsdove/foxymachines/Items.java:444
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:651
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:652
 msgid "&7Damage III"
 msgstr "&7傷害 III"
 
@@ -351,455 +354,459 @@ msgid "&7Life Steal II"
 msgstr "&7生命吸取 II"
 
 #: src/main/java/me/gallowsdove/foxymachines/Items.java:446
+msgid "&7Armor Penetration II"
+msgstr "&7護甲穿透 II"
+
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:447
 msgid "&7Overheal"
 msgstr "&7過度治療"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:456
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:457
 msgid "&6Magical Lump &7- &eIV"
 msgstr "&6魔法顆粒 &7- &eIV"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:458
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:459
 msgid "&c&oTier: IV"
 msgstr "&c&o等級：IV"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:463
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:464
 msgid "&6Magical Lump &7- &eV"
 msgstr "&6魔法顆粒 &7- &eV"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:465
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:466
 msgid "&c&oTier: V"
 msgstr "&c&o等級：V"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:470
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:471
 msgid "&bAquatic Helmet"
 msgstr "&b水靈頭盔"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:471
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:472
 msgid "&7Water Breathing"
 msgstr "&7水下呼吸"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:472
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:473
 msgid "&7Darkvision"
 msgstr "&7黑暗視覺"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:485
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:486
 msgid "&aResistant Chestplate"
 msgstr "&a抗性胸甲"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:486
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:487
 msgid "&7Resistance I"
 msgstr "&7抗性 I"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:487
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:488
 msgid "&7Regeneration I"
 msgstr "&7回復 I"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:496
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:497
 msgid "&cFiery Leggings"
 msgstr "&c火焰護腿"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:497
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:498
 msgid "&7Fire Aura II"
 msgstr "&7火焰領域 II"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:507
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:508
 msgid "&eLight Boots"
 msgstr "&e輕便靴子"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:508
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:509
 msgid "&7Jump I"
 msgstr "&7跳躍提升 I"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:509
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:510
 msgid "&7Speed I"
 msgstr "&7加速 I"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:510
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:511
 msgid "&7Lightweight"
 msgstr "&7輕量化"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:521
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:522
 msgid "&fAquatic Helmet Frame"
 msgstr "&f水靈頭盔框架"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:523
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:531
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:539
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:547
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:554
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:562
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:524
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:532
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:540
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:548
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:555
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:563
 msgid "&7Crafting Material"
 msgstr "&7製作材料"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:529
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:530
 msgid "&fResistant Chestplate Frame"
 msgstr "&f抗性胸甲框架"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:537
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:538
 msgid "&fFiery Leggings Frame"
 msgstr "&f火焰護腿框架"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:545
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:546
 msgid "&fLight Boots Frame"
 msgstr "&f輕便靴子框架"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:553
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:554
 msgid "&cCursed Shard"
 msgstr "&c詛咒碎片"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:555
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:563
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:556
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:564
 msgid "&7Will reset a Quest when thrown into an Altar..."
 msgstr "&7當丟入祭壇時將會重置任務..."
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:561
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:562
 msgid "&eCelestial Shard"
 msgstr "&e天界碎片"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:569
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:570
 msgid "&aEquanimous Gem"
 msgstr "&a鎮靜寶石"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:575
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:576
 msgid "&fPolar Fox Hide"
 msgstr "&f北極狐狸皮"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:581
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:582
 msgid "&cMagma Essence"
 msgstr "&c岩漿精華"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:587
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:588
 msgid "&bTropical Fish Scale"
 msgstr "&b熱帶魚鱗片"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:593
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:594
 msgid "&aParrot Feather"
 msgstr "&a鸚鵡羽毛"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:600
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:601
 msgid "&7Ancient Rune &8&l[&2&lUnbreakable&8&l]"
 msgstr "&7古代魔法符文 &8&l[&2&l牢不可破&8&l]"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:602
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:603
 msgid "&eDrop this rune onto a dropped item to"
 msgstr "&e將此符文放在掉落的物品上"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:603
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:604
 msgid "&emake it &2unbreakable"
 msgstr "&e將會使其&2無法破壞"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:609
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:610
 msgid "&aPixie Queen Spawn Egg"
 msgstr "&a精靈女王 生怪蛋"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:615
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:616
 msgid "&cHeadless Horseman Spawn Egg"
 msgstr "&c無頭騎士 生怪蛋"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:621
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:622
 msgid "&4Pixie Queen Heart"
 msgstr "&4精靈女王之心"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:627
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:628
 msgid "&ePixie Dust"
 msgstr "&e精靈之粉"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:629
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:630
 msgid "&7Strength IV"
 msgstr "&7力量 IV"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:635
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:636
 msgid "&cVile Pumpkin"
 msgstr "&c邪惡南瓜"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:641
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:642
 msgid "&cVile Seeds"
 msgstr "&c邪惡種子"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:643
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:644
 msgid "&7Health Boost V"
 msgstr "&7生命值提升 V"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:649
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:650
 msgid "&eAcri Arcum"
 msgstr "&e鋒利之弓"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:652
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:653
 msgid "&7Armor Piercing II"
 msgstr "&7穿甲性 II"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:662
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:663
 msgid "&eGhost Block Remover"
 msgstr "&e鬼方塊移除器"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:664
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:665
 msgid "&7Right click to remove a Ghost Block."
 msgstr "&7右鍵點擊來移除鬼方塊。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:670
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:671
 msgid "&ePosition Selector"
 msgstr "&e位置選擇器"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:672
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:673
 msgid "&7Left click a block to select primary position."
 msgstr "&7左鍵點擊方塊來選擇主要位置。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:673
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:674
 msgid "&7Right click a block to select secondary position."
 msgstr "&7右鍵點擊方塊來選擇次要位置。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:681
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:682
 msgid "&eFill Wand"
 msgstr "&e填充法杖"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:683
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:696
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:684
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:697
 msgid "&7Select corner points with Position Selector."
 msgstr "&7使用位置選擇器選擇角落點。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:684
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:685
 msgid "&7Shift right click to select material."
 msgstr "&7Shift + 右鍵來選擇材料。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:685
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:686
 msgid "&7Right click to fill an area."
 msgstr "&7右鍵來填充區域。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:687
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:688
 msgid "&7Material: &eNone"
 msgstr "&7材料：&e無"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:694
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:695
 msgid "&eSponge Wand"
 msgstr "&e海綿法杖"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:697
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:698
 msgid "&7Right click to remove Water and Lava."
 msgstr "&7右鍵來清除水和熔岩。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:705
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:706
 msgid "&aNuclear Salt"
 msgstr "&a核子鹽"
 
-#: src/main/java/me/gallowsdove/foxymachines/Items.java:713
+#: src/main/java/me/gallowsdove/foxymachines/Items.java:714
 msgid "&fCompressed Sponge"
 msgstr "&f壓縮海綿"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:174
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:176
 msgid "&eMob Drop"
 msgstr "&e生物掉落"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:179
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:181
 msgid "&eRabbit Drop"
 msgstr "&e兔子掉落"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:184
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:186
 msgid "&ePlayer Drop"
 msgstr "&e玩家掉落"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:189
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:191
 msgid "&eTropical Fish Drop"
 msgstr "&e熱帶魚掉落"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:194
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:196
 msgid "&ePolar Fox Drop"
 msgstr "&e北極狐狸掉落"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:199
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:201
 msgid "&eMagma Cube Drop"
 msgstr "&e岩漿立方怪掉落"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:204
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:206
 msgid "&eParrot Drop"
 msgstr "&e鸚鵡掉落"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:209
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:211
 msgid "&eWither Skeleton Drop"
 msgstr "&e凋零骷髏掉落"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:248
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:250
 msgid "&aPixie Queen"
 msgstr "&a精靈女王"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:248
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:250
 msgid "&7Summon it using &aPixie Queen Spawn Egg"
 msgstr "&7用&a精靈女王 生怪蛋&7招喚"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:253
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:255
 msgid "&cHeadless Horseman"
 msgstr "&c無頭騎士"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:253
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:255
 msgid "&7Summon it using &cHeadless Horseman Spawn Egg"
 msgstr "&7用&c無頭騎士 生怪蛋&7招喚"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:427
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:401
 msgid "&fGhost Block: &6"
 msgstr "&f鬼方塊：&6"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:429
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:403
 #: src/main/java/me/gallowsdove/foxymachines/implementation/tools/GhostBlockRemover.java:47
 msgid "&7An intangible block."
 msgstr "&7一種無形的方塊。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:454
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:428
 msgid "On the wind with the power of electricity"
 msgstr "用電力所產生的風"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:458
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:432
 msgid "Create inferno"
 msgstr "製造火海"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:462
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:436
 msgid "Support"
 msgstr "友軍支援！"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:466
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:440
 msgid "Harder, Better, Stronger"
 msgstr "更硬、更好、更強"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:470
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:444
 msgid "Beyond imaginations"
 msgstr "超越想像"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:474
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:448
 msgid "Up 1"
 msgstr "向上加一"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:478
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:452
 msgid "Brewing like never before"
 msgstr "前所未有的釀造方式"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:482
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:456
 msgid "Get rid of the smelteries"
 msgstr "擺脫冶煉爐"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:486
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:460
 msgid "Quite a useful utility"
 msgstr "相當實用的工具"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:490
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:464
 msgid "What a material"
 msgstr "多麼出色的材料！"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:494
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:468
 msgid "Faster, Better, Stronger"
 msgstr "更快、更好、更強"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:498
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:472
 msgid "Stay safe!"
 msgstr "注意安全！"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:502
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:476
 msgid "A safe space"
 msgstr "一個安全的空間"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:506
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:480
 msgid "From far away"
 msgstr "從遙遠的地方"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:510
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:484
 msgid "More ingots"
 msgstr "更多錠"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:514
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:488
 msgid "Sacrifice"
 msgstr "獻祭"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:520
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:494
 msgid "Profit"
 msgstr "盈利"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:525
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:499
 msgid "Demonic plate"
 msgstr "惡魔板"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:529
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:503
 msgid "On my way to Forcefield"
 msgstr "在前往穹頂的途中"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:533
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:507
 msgid "No more wires"
 msgstr "不再需要更多的電線！"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:537
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:511
 msgid "With the power of Poseidon"
 msgstr "憑藉著波賽頓的力量"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:541
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:515
 msgid "Better Fishing"
 msgstr "更好的釣魚"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:545
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:519
 msgid "Better Swords"
 msgstr "更好的刀"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:549
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:553
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:523
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:527
 msgid "More Lumps, More Magic"
 msgstr "更多魔法，更多顆粒"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:557
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:531
 msgid "Bloodier"
 msgstr "更加血腥"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:561
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:535
 msgid "Better Armor"
 msgstr "更好的裝備"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:565
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:539
 msgid "Bloody Bucket"
 msgstr "血腥之桶"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:569
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:543
 msgid "Balanced, as things should be"
 msgstr "一切都是平衡的，就如同它所存在的一般"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:573
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:547
 msgid "The Ultimate Sword"
 msgstr "快，還要更快！！！"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:577
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:551
 msgid "Armor Frame"
 msgstr "裝備框架"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:581
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:555
 msgid "Who needs anvil?"
 msgstr "誰還需要鐵砧？"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:586
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:560
 msgid "A worthy opponent."
 msgstr "一個值得對戰的對手。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:590
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:564
 msgid "Strength Boost."
 msgstr "力量提升。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:594
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:568
 msgid "Good luck"
 msgstr "祝你好運"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:598
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:572
 msgid "Health Boost."
 msgstr "生命值提升。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:603
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:577
 msgid "Bow."
 msgstr "弓。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:607
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:581
 msgid "Ghost Block Remover."
 msgstr "鬼方塊移除器。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:611
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:585
 msgid "Building made easier."
 msgstr "讓建築更加簡單。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:615
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:589
 msgid "Don't forget your hazmat suit."
 msgstr "別忘記你的防護裝。"
 
-#: src/main/java/me/gallowsdove/foxymachines/Setup.java:619
+#: src/main/java/me/gallowsdove/foxymachines/Setup.java:593
 msgid "Succ."
 msgstr "吸。"
 
@@ -1042,9 +1049,13 @@ msgstr "飛濺 複合藥水"
 msgid "You don't have permission to place this here!"
 msgstr "你沒有權限可以放置在這裡！"
 
-#: src/main/java/me/gallowsdove/foxymachines/implementation/materials/ShardMaterial.java:42
-msgid "Quest reset!"
-msgstr "任務重置！"
+#: src/main/java/me/gallowsdove/foxymachines/implementation/materials/ShardMaterial.java:35
+msgid "&eYou should check your quest with &d/foxy quest &efirst!"
+msgstr "&e你必須先用「&d/foxy quest&e」指令查看你的任務！"
+
+#: src/main/java/me/gallowsdove/foxymachines/implementation/materials/ShardMaterial.java:43
+msgid "Reset active quest!"
+msgstr "重置啟動任務！"
 
 #: src/main/java/me/gallowsdove/foxymachines/implementation/mobs/HeadlessHorseman.java:43
 #: src/main/java/me/gallowsdove/foxymachines/implementation/mobs/HeadlessHorseman.java:68
@@ -1145,11 +1156,11 @@ msgstr "你不能傳送到穹頂中！"
 msgid "Primary position set to "
 msgstr "主要位置設定為 "
 
-#: src/main/java/me/gallowsdove/foxymachines/listeners/SwordListener.java:121
+#: src/main/java/me/gallowsdove/foxymachines/listeners/SwordListener.java:62
 msgid "The Cursed Sword is pleased."
 msgstr "詛咒之劍相當滿意。"
 
-#: src/main/java/me/gallowsdove/foxymachines/listeners/SwordListener.java:124
+#: src/main/java/me/gallowsdove/foxymachines/listeners/SwordListener.java:66
 msgid "The Celestial Sword is pleased."
 msgstr "天界之劍相當滿意。"
 
@@ -1193,167 +1204,98 @@ msgstr "&a獨特生物掉落"
 msgid "&e&oObtained by killing the specified mob."
 msgstr "&e&o透過殺死指定生物來取得。"
 
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:32
-msgid "I would love to kill a "
-msgstr "我想殺死一隻"
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:31
+msgid "I would love to kill a {entity}, so tasty!"
+msgstr "我想殺死一隻「{entity}」，它多麼的好吃啊！"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:32
-msgid ", so tasty!"
-msgstr "，它多麼的好吃啊！"
+msgid "Give me a {entity}, now!"
+msgstr "現在給我一隻「{entity}」！"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:33
-msgid "Give me a "
-msgstr "現在給我一隻"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:33
-msgid ", now!"
-msgstr "！"
+msgid "Surely you can help me slay a {entity}."
+msgstr "你肯定可以幫我殺死一隻「{entity}」。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:34
-msgid "Surely you can help me slay a "
-msgstr "你肯定可以幫我殺死一隻"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:34
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:41
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:46
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:47
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:49
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:53
-msgid "."
-msgstr "。"
+msgid "I want blood....  {entity} blood."
+msgstr "我要鮮血……「{entity}」的鮮血。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:35
-msgid "I want blood....  "
-msgstr "我要鮮血……"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:35
-msgid " blood."
-msgstr "的鮮血。"
+msgid "I need a {entity} liver."
+msgstr "我需要「{entity}」的肝臟。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:36
-msgid "I need a "
-msgstr "我需要"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:36
-msgid " liver."
-msgstr "的肝臟。"
+msgid "I've heard that {entity} blood is tasty..."
+msgstr "我聽說「{entity}」的鮮血非常的美味……"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:37
-msgid "I've heard that "
-msgstr "我聽說"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:37
-msgid " blood is tasty..."
-msgstr "的鮮血非常的美味……"
+msgid "{entity} heart, hmmm..."
+msgstr "「{entity}」的心臟，嗯……"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:38
-msgid " heart, hmmm..."
-msgstr "的心臟，嗯……"
+msgid "I would slay God himself for some {entity} flesh."
+msgstr "我甚至可以殺神取得「{entity}」的血肉。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:39
-msgid "I would slay God himself for some "
-msgstr "我甚至可以殺神取得"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:39
-msgid " flesh."
-msgstr "的血肉。"
+msgid "I could be devouring a {entity} whole day."
+msgstr "我可以整天吞食著「{entity}」。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:40
-msgid "I could be devouring a "
-msgstr "我可以整天吞食著"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:40
-msgid " whole day."
-msgstr "。"
+msgid "I've been waiting for too long. Too long or a day to kill a {entity}."
+msgstr "我等待太久了。等待太久來在這一天來虐殺一隻「{entity}」。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:41
-msgid "I've been waiting for too long. Too long or a day to kill a "
-msgstr "我等待太久了。等待太久來在這一天來虐殺一隻"
+msgid "{entity}'s blood shall be spilled"
+msgstr "「{entity}」的鮮血將會噴濺到我的刀刃之上"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:42
-msgid "'s blood shall be spilled"
-msgstr "的鮮血將會噴濺到我的刀刃之上"
+msgid "My curse shall devour {entity}'s soul"
+msgstr "我的詛咒將吞噬「{entity}」的靈魂"
 
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:43
-msgid "My curse shall devour "
-msgstr "我的詛咒將吞噬"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:43
-msgid "'s soul"
-msgstr "的靈魂"
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:44
+msgid "I love all beings... except {entity}, I hate those."
+msgstr "我愛著所有的生命體……除了「{entity}」，我憎恨它們。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:45
-msgid "I love all beings... except "
-msgstr "我愛著所有的生命體……除了"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:45
-msgid ", I hate those."
-msgstr "，我憎恨它們"
+msgid "All life must be in balance, what's why I need to kill a {entity}."
+msgstr "眾生皆為平等，這就是為什麼我需要殺死一隻「{entity}」。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:46
-msgid "All life must be in balance, what's why I need to kill a "
-msgstr "眾生皆為平等，這就是為什麼我需要殺死一隻"
+msgid "I am celestial, but I am also a sword. Now get me a {entity}."
+msgstr "我是天界的存在，同時也是一把劍。現在給我一隻「{entity}」。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:47
-msgid "I am celestial, but I am also a sword. Now get me a "
-msgstr "我是天界的存在，同時也是一把劍。現在給我一隻"
+msgid "I'm sorry, but please get me some {entity}. No questions."
+msgstr "抱歉，請給我一些「{entity}」。不許問任何問題。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:48
-msgid "I'm sorry, but please get me some "
-msgstr "抱歉，請給我一些"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:48
-msgid ". No questions."
-msgstr "。不許問任何問題。"
+msgid "Celestial sword requires a celestial sacrifice. A {entity}."
+msgstr "天界之劍需要一隻天界的祭品。一隻「{entity}」。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:49
-msgid "Celestial sword requires a celestial sacrifice. A "
-msgstr "天界之劍需要一隻天界的祭品。一隻"
+msgid "My next victim should be {entity}, just as God intended."
+msgstr "我的下一隻受害者是「{entity}」，就如同上帝所期望的。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:50
-msgid "My next victim should be "
-msgstr "我的下一隻受害者是"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:50
-msgid ", just as God intended."
-msgstr "，就如同上帝所期望的。"
+msgid "And the next in line is ... {entity}!"
+msgstr "接下來的祭品是……「{entity}」！"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:51
-msgid "And the next in line is ... "
-msgstr "接下來的祭品是……"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:51
-msgid "!"
-msgstr "！"
+msgid "The God wants a {entity} dead."
+msgstr "上帝要「{entity}」的死亡。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:52
-msgid "The God wants a "
-msgstr "上帝要"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:52
-msgid " dead."
-msgstr "的死亡。"
+msgid "For God and honour, go slay a {entity}."
+msgstr "為了上帝和榮譽，去屠殺一隻「{entity}」。"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:53
-msgid "For God and honour, go slay a "
-msgstr "為了上帝和榮譽，去屠殺一隻"
+msgid "Go, get that {entity}! For justice!"
+msgstr "去吧，取得「{entity}」的頭顱！為了正義！"
 
 #: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:54
-msgid "Go, get that "
-msgstr "去吧，取得"
+msgid "The stars have aligned. I can clearly see the {entity} that shall die by my blade"
+msgstr "星辰已對齊。我能清楚的看見「{entity}」將死於我的刀刃下"
 
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:54
-msgid "! For justice!"
-msgstr "的頭顱！為了正義！"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:55
-msgid "The stars have aligned. I can clearly see the "
-msgstr "星辰已對齊。我能清楚的看見"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:55
-msgid " that shall die by my blade"
-msgstr "將死於我的刀刃下"
-
-#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:68
+#: src/main/java/me/gallowsdove/foxymachines/utils/QuestUtils.java:67
 msgid "Invalid Entity Type in \"quest-mobs\": "
 msgstr "在「quest-mobs」中有無效的實體類型："

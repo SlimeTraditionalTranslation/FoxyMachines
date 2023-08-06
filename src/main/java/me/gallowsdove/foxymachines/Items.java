@@ -423,6 +423,7 @@ public final class Items{
             Material.NETHERITE_SWORD,
             GetText.tr("&cCursed Sword"),
             GetText.tr("&7Life Steal I"),
+            GetText.tr("&7Armor Penetration I"),
             "",
             GetText.tr("&7Confuses enemies. Increases damage."),
             GetText.tr("&7Can negatively affect wielder.")
@@ -433,8 +434,7 @@ public final class Items{
             Material.NETHERITE_SWORD,
             GetText.tr("&eCelestial Sword"),
             GetText.tr("&7Divine Smite II"),
-            "",
-            GetText.tr("&7Ignores 20% of Resistances.")
+            GetText.tr("&7Armor Penetration V")
     );
 
     public static final SlimefunItemStack ELUCIDATOR = new SlimefunItemStack(
@@ -443,6 +443,7 @@ public final class Items{
             GetText.tr("&bElucidator"),
             GetText.tr("&7Damage III"),
             GetText.tr("&7Life Steal II"),
+            GetText.tr("&7Armor Penetration II"),
             GetText.tr("&7Overheal")
     );
     static {

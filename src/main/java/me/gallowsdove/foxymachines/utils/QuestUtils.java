@@ -4,7 +4,6 @@ import de.unpixelt.locale.Locale;
 import de.unpixelt.locale.Translate;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChatUtils;
-import lombok.Getter;
 import me.gallowsdove.foxymachines.FoxyMachines;
 import me.gallowsdove.foxymachines.Items;
 import org.bukkit.ChatColor;
@@ -28,31 +27,31 @@ public class QuestUtils {
     public static final NamespacedKey KEY = new NamespacedKey(FoxyMachines.getInstance(), "quest");
 
     private static final List<EntityType> QUEST_MOBS = new ArrayList<>();
-    private static final List<Line> CURSED_LINES = List.of(
-            new Line(GetText.tr("I would love to kill a "), GetText.tr(", so tasty!")),
-            new Line(GetText.tr("Give me a "), GetText.tr(", now!")),
-            new Line(GetText.tr("Surely you can help me slay a "), GetText.tr(".")),
-            new Line(GetText.tr("I want blood....  "), GetText.tr(" blood.")),
-            new Line(GetText.tr("I need a "), GetText.tr(" liver.")),
-            new Line(GetText.tr("I've heard that "), GetText.tr(" blood is tasty...")),
-            new Line("", GetText.tr(" heart, hmmm...")),
-            new Line(GetText.tr("I would slay God himself for some "), GetText.tr(" flesh.")),
-            new Line(GetText.tr("I could be devouring a "), GetText.tr(" whole day.")),
-            new Line(GetText.tr("I've been waiting for too long. Too long or a day to kill a "), GetText.tr(".")),
-            new Line("", GetText.tr("'s blood shall be spilled")),
-            new Line(GetText.tr("My curse shall devour "), GetText.tr("'s soul")));
-    private static final List<Line> CELESTIAL_LINES = List.of(
-            new Line(GetText.tr("I love all beings... except "), GetText.tr(", I hate those.")),
-            new Line(GetText.tr("All life must be in balance, what's why I need to kill a "), GetText.tr(".")),
-            new Line(GetText.tr("I am celestial, but I am also a sword. Now get me a "), GetText.tr(".")),
-            new Line(GetText.tr("I'm sorry, but please get me some "), GetText.tr(". No questions.")),
-            new Line(GetText.tr("Celestial sword requires a celestial sacrifice. A "), GetText.tr(".")),
-            new Line(GetText.tr("My next victim should be "), GetText.tr(", just as God intended.")),
-            new Line(GetText.tr("And the next in line is ... "), GetText.tr("!")),
-            new Line(GetText.tr("The God wants a "), GetText.tr(" dead.")),
-            new Line(GetText.tr("For God and honour, go slay a "), GetText.tr(".")),
-            new Line(GetText.tr("Go, get that "), GetText.tr("! For justice!")),
-            new Line(GetText.tr("The stars have aligned. I can clearly see the "), GetText.tr(" that shall die by my blade")));
+    private static final List<String> CURSED_LINES = List.of(
+            GetText.tr("I would love to kill a {entity}, so tasty!"),
+            GetText.tr("Give me a {entity}, now!"),
+            GetText.tr("Surely you can help me slay a {entity}."),
+            GetText.tr("I want blood....  {entity} blood."),
+            GetText.tr("I need a {entity} liver."),
+            GetText.tr("I've heard that {entity} blood is tasty..."),
+            GetText.tr("{entity} heart, hmmm..."),
+            GetText.tr("I would slay God himself for some {entity} flesh."),
+            GetText.tr("I could be devouring a {entity} whole day."),
+            GetText.tr("I've been waiting for too long. Too long or a day to kill a {entity}."),
+            GetText.tr("{entity}'s blood shall be spilled"),
+            GetText.tr("My curse shall devour {entity}'s soul"));
+    private static final List<String> CELESTIAL_LINES = List.of(
+            GetText.tr("I love all beings... except {entity}, I hate those."),
+            GetText.tr("All life must be in balance, what's why I need to kill a {entity}."),
+            GetText.tr("I am celestial, but I am also a sword. Now get me a {entity}."),
+            GetText.tr("I'm sorry, but please get me some {entity}. No questions."),
+            GetText.tr("Celestial sword requires a celestial sacrifice. A {entity}."),
+            GetText.tr("My next victim should be {entity}, just as God intended."),
+            GetText.tr("And the next in line is ... {entity}!"),
+            GetText.tr("The God wants a {entity} dead."),
+            GetText.tr("For God and honour, go slay a {entity}."),
+            GetText.tr("Go, get that {entity}! For justice!"),
+            GetText.tr("The stars have aligned. I can clearly see the {entity} that shall die by my blade"));
 
 
     public static void init() {
@@ -104,16 +103,16 @@ public class QuestUtils {
     @ParametersAreNonnullByDefault
     public static void sendQuestLine(Player p, SlimefunItemStack item) {
         ThreadLocalRandom random = ThreadLocalRandom.current();
-        int id = getQuestLine(p);
+        String entity = toString(p, getQuestLine(p));
 
         if (item == Items.CURSED_SWORD) {
             int i = random.nextInt(CURSED_LINES.size());
-            Line line = CURSED_LINES.get(i);
-            p.sendMessage(ChatColor.RED + line.firstHalf() + "「" + toString(p, id) + "」" + line.secondHalf());
+            String line = CURSED_LINES.get(i).replace("{entity}", entity);
+            p.sendMessage(ChatColor.RED + line);
         } else if (item == Items.CELESTIAL_SWORD) {
             int i = random.nextInt(CELESTIAL_LINES.size());
-            Line line = CELESTIAL_LINES.get(i);
-            p.sendMessage(ChatColor.YELLOW + line.firstHalf() + "「" + toString(p, id) + "」" + line.secondHalf());
+            String line = CELESTIAL_LINES.get(i).replace("{entity}", entity);
+            p.sendMessage(ChatColor.YELLOW + line);
         }
     }
 
@@ -142,5 +141,3 @@ public class QuestUtils {
         return Translate.getEntity(Locale.zh_tw, QUEST_MOBS.get(id));
     }
 }
-
-record Line(@Getter String firstHalf, @Getter String secondHalf) { }

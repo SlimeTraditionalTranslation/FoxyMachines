@@ -30,16 +30,17 @@ public class ShardMaterial extends SimpleSlimefunItem<ItemDropHandler> {
                 return false;
             }
 
-            if (!QuestUtils.hasActiveQuest(p)) {
-                return true;
-            }
-
             Slimefun.runSync(() -> {
+                if (!QuestUtils.hasActiveQuest(p)) {
+                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', GetText.tr("&eYou should check your quest with &d/foxy quest &efirst!")));
+                    return;
+                }
+
                 if (SacrificialAltarListener.findAltar(item.getLocation().getBlock()) == null) {
                     return;
                 }
 
-                p.sendMessage(this.color + GetText.tr("Quest reset!"));
+                p.sendMessage(this.color + GetText.tr("Reset active quest!"));
                 QuestUtils.resetQuestLine(p);
                 SacrificialAltarListener.particleAnimation(item.getLocation());
 

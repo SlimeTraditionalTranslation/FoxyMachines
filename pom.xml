@@ -124,7 +124,7 @@
         <dependency>
             <groupId>com.github.SlimeTraditionalTranslation</groupId>
             <artifactId>InfinityLib</artifactId>
-            <version>446478bc97</version>
+            <version>v1.0.0</version>
             <scope>compile</scope>
         </dependency>
 
